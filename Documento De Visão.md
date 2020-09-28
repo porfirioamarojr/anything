@@ -11,10 +11,18 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 ### Requisitos funcionais
 |  CÓD 	|   REQUISITO	| DESCRIÇÃO | PRIORIDADE
 |---	|---	|---  |--- |
-|  RF001 	|   Permitir Cadastro de Administrador do Sistema | O sistema deve permitir o cadastro de pelo menos um administrador do sistema. Este terá a responsabilidade sobre todas as inclusões e alterações que serão feitas no site. | Alta | 
-| RF002 | Permitir Cadastro de Produtos | Cadastrar todos os produtos disponíveis no e-commerce e suas características. O administrador pode incluir, alterar ou modificar o status de um produto. Ao incluir, deve relacioná-lo a uma categoria já cadastrada, bem como identificar a marca à qual o mesmo pertence, informando o tamanho e a quantidade correspondente a cada uma delas, indicando as cores disponíveis e o preço de cada um dos produtos cadastrados, bem como a quantidade disponibilizada para venda. Também deve possibilitar que o administrador do sistema inclua imagens do produto. | Alta |
-| RF003 | Permitir Cadastro de Clientes |  O e-commerce deve possibilitar o cadastramento dos clientes. Além dos dados essenciais para efetuar uma compra, o cliente deve informar um e-mail ou contato em uma rede social para recebimento de novidades/promoções. Essa opção também deverá conter os dados do próprio cadastro do cliente como data de criação da conta, usuário e senha e data do último login. | Alta|
-| RF004 |  Lançamento de Pedidos |  O e-commerce deve permitir que o usuário possa efetuar o pedido, adicionando os itens que irão compor o mesmo, indicando a quantidade de cada um, bem como a forma de pagamento a ser utilizada e a quantidade de parcelas em que será efetuado o pagamento. Para tanto, o cliente deve estar identificado pelo seu usuário no momento de efetuar o pedido. A compra só será confirmada a partir do momento em que for validada a forma de pagamento. | Alta |
+|  RF001 	|  Cadastro de Produtos |
+No cadastro de produtos será obrigatório o preenchimento dos seguintes campos: nome e preço e terá outra tabela associada à ela chamada “detalhes” que conterá a quantidade, tamanho e cor dos produtos. | Alta |
+
+| RF002 | Cadastro de Clientes | No cadastro de clientes será obrigatório o preenchimento dos seguintes campos: CPF, nome completo, nome da mãe, data de nascimento, endereço (rua, bairro e cidade (chave estrangeira da tabela Cidades)), e telefone.  | Alta |
+
+| RF003 | Cadastro de Cidades | No cadastro de cidades será obrigatório o preenchimento dos seguintes campos: nome e estado. | Média | 
+
+| RF004 |  Cadastro de Revendedores |  No cadastro de revendedoras será obrigatório o preenchimento dos seguintes campos: CPF, nome completo, data de nascimento, endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)) e telefone. | Baixa |
+| RF005 | Cadastro de Fornecedores | No cadastro de fornecedores será obrigatório o preenchimento dos seguintes campos: nome, telefone, CNPJ ou CPF e endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)). | Alta |
+
+ 
+
 
 
 ### Requisitos não-funcionais
