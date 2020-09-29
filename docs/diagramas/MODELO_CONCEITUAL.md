@@ -1,3 +1,5 @@
+# Código do Modelo Conceitual gerado a partir do yUML
+```
 [Produto]
 [Carrinho]
 [Pagamento]
@@ -14,3 +16,4 @@
 [Conta]++1-1>[Administrador]
 [Conta]++*-*>[Cliente]
 [Cartão]<>1-1>[Cliente]
+```
