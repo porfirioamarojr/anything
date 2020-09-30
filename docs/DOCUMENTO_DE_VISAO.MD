@@ -48,6 +48,7 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 
 ### Perfis dos usuários
 || Administrador
+
 || Clientes
 || Vendedores
 || e-commerce
