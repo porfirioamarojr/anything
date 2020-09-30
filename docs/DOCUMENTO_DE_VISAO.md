@@ -24,10 +24,31 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 | RF011 | Realização de Vendas  | Para vendas condicionais que não tiverem sido canceladas, será possível recuperá-las para a conferência dos produtos e a mesma poderá ser tornar uma venda fechada. Para fechar essa venda e serem geradas as prestações da mesma, será necessário apenas excluir as mercadorias devolvidas e finalizar com as mercadorias que o cliente quiser ficar. | Alta |
 | RF012 | Realização de Vendas  | Para recuperar alguma venda condicional será necessário informar apenas o CPF do cliente.  | Alta |
 | RF013 | Realização de Vendas  | Após qualquer venda ser fechada o valor da venda será agregado ao valor de vendas efetuadas pelo vendedor da venda e será agregado ao valor todal das vendas realizadas pela empresa | Alta |
-
+| RF014 | Realização de Vendas  | Ao ser finalizada uma venda, o(s) produto(s) vendido(s) deverá(ão) ficar indisponível para a venda e o mesmo será decrementado do valor total de unidades disponíveis.  | Alta |
+| RF015 | Cálculo das Parcelas   | O sistema irá gerar automaticamente o valor das parcelas para o vendedor, sendo necessário apenas informar o(s) produto(s), data de vencimento, se será feito com ou sem entrada e o valor da entrada  | Media |
+| RF015 | Cálculo das Parcelas  | Será permitido, dentro do valor estipulado para os vendedores, descontos no momento da realização da venda.  | Media |
+| RF016 | Controle de Caixa   | Ao ser paga uma prestação por um cliente a mesma entrará como entrada no dia correspondente a efetivação do pagamento. | Media |
+| RF017 | Controle de Caixa | Poderá ser calculado no final de cada dia o lucro da empresa. | Media |
 
 ### Requisitos não-funcionais
-### Perfis dos usuários (características dos usuários)
-### Riscos
-### Suposições e dependências
-### Perspectiva do produto (dá uma visão geral de como o produto funcionará. Pode ser um protótipo de telas feito a mão ou não)
+|  CÓD 	|   REQUISITO	| DESCRIÇÃO 
+|---	|---	|---  |
+|RNF001| Geral | O sistema deve ter uma inteface simples e com soluções intuitivas. |
+|RNF002| Geral |  As informações serão armazenadas em um Banco de Dados.  |
+|RNF003| Acesso ao Sistema |  O sistema poderá ser acessado somente pelo administrador do sistema e pelos vendedores devidamente cadastradas no sistema |
+|RNF004|  Acesso ao Sistema | O acesso ao sistema se dará pela informação de usuário e senha |
+|RNF005| Permissões do Sistema: Administrador | O administrador do sistema terá acesso à todas as áreas do sistema, com permissão de leitura, exclusão, inclusão e alteração. |
+|RNF006| Permissões do Sistema: Vendedores | Permissão para realizar todos os tipos de cadastros, alterações e exclusões nos mesmos |
+|RNF007|  Permissões do Sistema: Vendedores | Permissão para realizar vendas condicionais tanto de clientes da loja como dos vendedores externas |
+|RNF008|  Permissões do Sistema: Vendedores | Permissão para efetuar pagamentos de prestações de clientes|
+|RNF009|  Permissões do Sistema: Vendedores | Permissão para consultar produtos e seu estoque|
+|RNF010|  Permissões do Sistema: Vendedores |Não tem permissão para fazer nenhum tipo de consulta referentes as vendas da empresa, vendas dos vendedores, das comissões e ao caixa|
+|RNF011|  Permissões do Sistema: Vendedores | Não é permitido fazer nenhum tipo de lançamento no caixa|
+|RNF012|  Permissões do Sistema: Vendedores | Permissão para concluir vendas no sistema|
+
+### Perfis dos usuários
+|| Administrador
+|| Clientes
+|| Vendedores
+|| e-commerce
+

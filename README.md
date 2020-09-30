@@ -5,9 +5,9 @@ Projeto da Disciplina de Engenharia de Software - Modelo de E-Commerce voltado p
 
 ## Documentação
 1. [Documento de Modelos](https://github.com/AmaroJunior98/anything/blob/master/docs/DOCUMENTO_DE_MODELOS.md)
-2. [Documento de Visão](https://github.com/AmaroJunior98/anything/blob/master/docs/DOCUMENTO_DE_VISAO.MD)
+2. [Documento de Visão](https://github.com/AmaroJunior98/anything/blob/master/docs/DOCUMENTO_DE_VISAO.md)
 3. [Plano de formatação](https://github.com/AmaroJunior98/anything/blob/master/docs/PLANO_DE_FORMATACAO.md)
-4. [Plano de iteração](https://github.com/AmaroJunior98/anything/blob/master/docs/PLANO_DE_ITERACAO.MD)
+4. [Plano de iteração](https://github.com/AmaroJunior98/anything/blob/master/docs/PLANO_DE_ITERACAO.md)
 
 ## Tecnologias
 No projeto teremos o suporte das seguintes tecnologias:
