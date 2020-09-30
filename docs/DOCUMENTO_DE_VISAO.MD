@@ -24,6 +24,12 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 | RF011 | Realização de Vendas  | Para vendas condicionais que não tiverem sido canceladas, será possível recuperá-las para a conferência dos produtos e a mesma poderá ser tornar uma venda fechada. Para fechar essa venda e serem geradas as prestações da mesma, será necessário apenas excluir as mercadorias devolvidas e finalizar com as mercadorias que o cliente quiser ficar. | Alta |
 | RF012 | Realização de Vendas  | Para recuperar alguma venda condicional será necessário informar apenas o CPF do cliente.  | Alta |
 | RF013 | Realização de Vendas  | Após qualquer venda ser fechada o valor da venda será agregado ao valor de vendas efetuadas pelo vendedor da venda e será agregado ao valor todal das vendas realizadas pela empresa | Alta |
+| RF014 | Realização de Vendas  | Ao ser finalizada uma venda, o(s) produto(s) vendido(s) deverá(ão) ficar indisponível para a venda e o mesmo será decrementado do valor total de unidades disponíveis.  | Alta |
+| RF015 | Cálculo das Parcelas   | O sistema irá gerar automaticamente o valor das parcelas para o vendedor, sendo necessário apenas informar o(s) produto(s), data de vencimento, se será feito com ou sem entrada e o valor da entrada  | Media |
+| RF015 | Cálculo das Parcelas  | Será permitido, dentro do valor estipulado para os vendedores, descontos no momento da realização da venda.  | Media |
+| RF016 | Controle de Caixa   | Ao ser paga uma prestação por um cliente a mesma entrará como entrada no dia
+correspondente a efetivação do pagamento. | Media |
+| RF017 | Controle de Caixa | Poderá ser calculado no final de cada dia o lucro da empresa. | Media |
 
 
 ### Requisitos não-funcionais
