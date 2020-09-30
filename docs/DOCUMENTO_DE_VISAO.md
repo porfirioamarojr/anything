@@ -57,6 +57,7 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 ### Riscos
 |  DATA  	|   RISCO	|  PRIORIDADE | STATUS |   PROVIDÊNCIA/SOLUÇÃO 
 |---	    |---	    |---          |------  |----
-
-
+| 17/09/2020 | Não aprendizado das ferramentas utilizadas pelos componentes do grupo a tempo | Alta | Todos | Vigente |  Reforçar estudos sobre as ferramentas e receber apoio dos integrantes que dominam o mesmo | 
+| 17/09/2020 |  Divisão de tarefas mal sucedida | Baixa | Gerente | Vigente |  Acompanhar o desenvolvimento de cada membro da equipe e estimar tempo necessário para conclusão das tarefas |
+| 17/09/2020 |  Implementação de protótipo com as tecnologias escolhidas pela equipe | Alta | Todos | Vigente |  Buscar tutoriais e a documentação das tecnologias para implementar os primeiros casos |
 
