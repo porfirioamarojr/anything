@@ -1,18 +1,12 @@
 #Plano de Iteração
+
 Este plano de iteração será usando como exemplo da disciplina Engenharia de Software II.
 Calendário da Iterações
-Iteração
-Data início
-Data Final
-Apresentação
-Gerente
-Detalhes
-It1
-17/09/2020
-02/09/2020
-01/09/2020
-Gerente 1
-Criar Documento de Visão, Modelos e Plano de Iteração e Release
+
+ Iteração | Data início | Data Final | Apresentação | Gerente | Detalhes
+ -------- | ----------- | ---------- | ------------ | ------- | --------
+ It1      | 17/09/2020  | 02/09/2020 | 01/09/2020   | Gerente 1 | Criar Documento de Visão, Modelos e Plano de Iteração e Release
+
 It2
 27/09/2020
 09/10/2020
