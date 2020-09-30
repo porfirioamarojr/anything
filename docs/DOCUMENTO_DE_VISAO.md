@@ -26,9 +26,9 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 | RF013 | Realização de Vendas  | Após qualquer venda ser fechada o valor da venda será agregado ao valor de vendas efetuadas pelo vendedor da venda e será agregado ao valor todal das vendas realizadas pela empresa | Alta |
 | RF014 | Realização de Vendas  | Ao ser finalizada uma venda, o(s) produto(s) vendido(s) deverá(ão) ficar indisponível para a venda e o mesmo será decrementado do valor total de unidades disponíveis.  | Alta |
 | RF015 | Cálculo das Parcelas   | O sistema irá gerar automaticamente o valor das parcelas para o vendedor, sendo necessário apenas informar o(s) produto(s), data de vencimento, se será feito com ou sem entrada e o valor da entrada  | Media |
-| RF015 | Cálculo das Parcelas  | Será permitido, dentro do valor estipulado para os vendedores, descontos no momento da realização da venda.  | Media |
-| RF016 | Controle de Caixa   | Ao ser paga uma prestação por um cliente a mesma entrará como entrada no dia correspondente a efetivação do pagamento. | Media |
-| RF017 | Controle de Caixa | Poderá ser calculado no final de cada dia o lucro da empresa. | Media |
+| RF016 | Cálculo das Parcelas  | Será permitido, dentro do valor estipulado para os vendedores, descontos no momento da realização da venda.  | Media |
+| RF017 | Controle de Caixa   | Ao ser paga uma prestação por um cliente a mesma entrará como entrada no dia correspondente a efetivação do pagamento. | Media |
+| RF018 | Controle de Caixa | Poderá ser calculado no final de cada dia o lucro da empresa. | Media |
 
 ### Requisitos não-funcionais
 |  CÓD 	|   REQUISITO	| DESCRIÇÃO 
@@ -45,10 +45,18 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 |RNF010|  Permissões do Sistema: Vendedores |Não tem permissão para fazer nenhum tipo de consulta referentes as vendas da empresa, vendas dos vendedores, das comissões e ao caixa|
 |RNF011|  Permissões do Sistema: Vendedores | Não é permitido fazer nenhum tipo de lançamento no caixa|
 |RNF012|  Permissões do Sistema: Vendedores | Permissão para concluir vendas no sistema|
+|RNF013|  Portabilidade |O sistema deve executar em sistemas operacionais Linux, Windows, Android ou IOS mediante uso de navegador de internet.|
+
 
 ### Perfis dos usuários
 || Administrador
 || Clientes
 || Vendedores
 || e-commerce
+
+### Riscos
+|  DATA  	|   RISCO	|  PRIORIDADE | STATUS |   PROVIDÊNCIA/SOLUÇÃO 
+|---	    |---	    |---          |------  |----
+
+
 
