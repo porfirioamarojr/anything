@@ -9,3 +9,7 @@ Segue em anexo a representação gráfica do modelo gerado a partir do yUML:
 O código referente ao diagrama:
 
 [Código UML](diagramas/MODELO_CONCEITUAL.md)
+
+Para mais informações sobre a utilização do yUML acesse o link:
+
+[Tutorial](https://yuml.me/diagram/plain/class/samples)
