@@ -27,12 +27,17 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 | RF014 | Realização de Vendas  | Ao ser finalizada uma venda, o(s) produto(s) vendido(s) deverá(ão) ficar indisponível para a venda e o mesmo será decrementado do valor total de unidades disponíveis.  | Alta |
 | RF015 | Cálculo das Parcelas   | O sistema irá gerar automaticamente o valor das parcelas para o vendedor, sendo necessário apenas informar o(s) produto(s), data de vencimento, se será feito com ou sem entrada e o valor da entrada  | Media |
 | RF015 | Cálculo das Parcelas  | Será permitido, dentro do valor estipulado para os vendedores, descontos no momento da realização da venda.  | Media |
-| RF016 | Controle de Caixa   | Ao ser paga uma prestação por um cliente a mesma entrará como entrada no dia
-correspondente a efetivação do pagamento. | Media |
+| RF016 | Controle de Caixa   | Ao ser paga uma prestação por um cliente a mesma entrará como entrada no dia correspondente a efetivação do pagamento. | Media |
 | RF017 | Controle de Caixa | Poderá ser calculado no final de cada dia o lucro da empresa. | Media |
 
-
 ### Requisitos não-funcionais
+|  CÓD 	|   REQUISITO	| DESCRIÇÃO 
+|---	|---	|---  |
+|RNF001| Geral | O sistema deve ter uma inteface simples e com soluções intuitivas. |
+|RNF002| Geral |  As informações serão armazenadas em um Banco de Dados.  |
+|RNF003| Acesso ao Sistema |  O sistema poderá ser acessado somente pelo administrador do sistema e pelos vendedores devidamente cadastradas no sistema |
+|RNF004|  Acesso ao Sistema | O acesso ao sistema se dará pela informação de usuário e senha |
+
 ### Perfis dos usuários (características dos usuários)
 ### Riscos
 ### Suposições e dependências
