@@ -46,13 +46,13 @@ Entidade: Cliente
  cpf      | primary key   | Numérico     | Não pode ser nulo. | Apenas números 
  cartao   | foreign key   | Numérico     | Não pode ser nulo. | Apenas números
 
-Entidade: Administrador
+### Entidade: Administrador
 
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
  cpf      | primary key   | Numérico    | Não pode ser nulo. | Apenas números 
  
-Entidade: Conta
+### Entidade: Conta
  
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação |
  -------- | ------------- | ------------ | --------- | ----------
@@ -65,7 +65,7 @@ Entidade: Conta
  telefone | - | Numérico | Não pode ser nulo. | - 
  endereco | foreign key | Endereço | Não pode ser nulo. | - 
  
-Entidade: Endereço
+### Entidade: Endereço
  
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
@@ -76,7 +76,7 @@ Entidade: Endereço
  cep | - | Numérico | Não pode ser nulo. | - 
  referencia | - | Alfanumérico | - | - 
  
-Entidade: Carrinho
+### Entidade: Carrinho
  
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
@@ -84,7 +84,7 @@ Entidade: Carrinho
  total | - | Numérico | Não pode ser nulo. | Apenas números
  produto | foreign key | Texto | Não pode ser nulo. | - 
  
-Entidade: Produto
+### Entidade: Produto
  
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
@@ -93,8 +93,7 @@ Entidade: Produto
  valor | - | Real | Não pode ser nulo. | Apenas números
  descricao | - | Texto | - | -
  
- 
-Entidade: Pagamento
+### Entidade: Pagamento
  
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
@@ -102,14 +101,12 @@ Entidade: Pagamento
  desconto | - | Numérico | Não pode ser nulo. | Apenas números
  total | - | Real | Não pode ser nulo. | Apenas números
  
-Entidade: Cartão
+### Entidade: Cartão
  
  Atributo | Tipo de chave | Tipo de dado | Restrição |Observação
  -------- | ------------- | ------------ | --------- | ----------
  numero_cartao | primary key | Numérico | Não pode ser nulo. | Apenas números
  data | - | Data | Não pode ser nulo. | Apenas números
- nome_cartao | - | Real | Não pode ser nulo. | Apenas números
+ nome_cartao | - | Numérico | Não pode ser nulo. | Apenas números
  cpf | - | Numérico |Não pode ser nulo. | Apenas números
- 
- 
- 
+  

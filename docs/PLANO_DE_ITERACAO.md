@@ -7,7 +7,7 @@
  Iteração | Data início | Data Final | Apresentação | Gerente | Detalhes
  -------- | ----------- | ---------- | ------------ | ------- | --------
  It1      | 17/09/2020  | 30/09/2020 | 01/09/2020   | Gerente 1 | Criar Documento de Visão, Modelos e Plano de Iteração e Release
- It2      | 27/09/2020  | 09/10/2020 | 08/10/2020   | Gerente 2 | Implementar, Criar US00, Detalhar US01, US02
+ It2      | 02/09/2020  | 07/10/2020 | 08/10/2020   | Gerente 2 | Implementar, Criar US00, Detalhar US01, US02
  It3      | 11/10/2020  | 24/10/2020 | 23/10/2020   | Gerente 3 | Implementar US01, US02, Detalhar US03 US04, Testar US00
  It4      | 25/10/2020  | 07/11/2020 | 06/11/2020   | Gerente 4
  It5      | 08/11/2020  | 21/11/2020 | 20/11/2020   | Gerente 5
@@ -50,7 +50,7 @@
   * O gerente deve enviar nesta tarefa o link do repositório e o link dos dois documentos no SIGAA.
  
  # T02 - Iteração 2 - Inicialização
- A Iteração 2 começou dia 24/06/2020 e vai até 02/07/2020. As atividades dessa tarefa são:
+ A Iteração 2 começou dia 02/09/2020 e vai até 08/10/2020. As atividades dessa tarefa são:
   
   * Atualização do Documento de Visão, pode adicionar requisitos funcionais, se necessário;
   * Atualização do Documento Lista de User Stories com a lista de User Stories, pode adicionar User Stories se  necessário. coloque no diretório "docs" do repositório;
