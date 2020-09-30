@@ -48,12 +48,11 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 
 ### Perfis dos usuários
 || Administrador
-  Responsavel por 
 || Clientes
-nome e endereço completo, CPF, data de nascimento, sendo estes campos obrigatórios. 
 || Vendedores
 || e-commerce
 
 ### Riscos
+
 ### Suposições e dependências
 ### Perspectiva do produto (dá uma visão geral de como o produto funcionará. Pode ser um protótipo de telas feito a mão ou não)
