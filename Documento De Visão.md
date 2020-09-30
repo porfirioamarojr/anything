@@ -20,6 +20,12 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 | RF007 | Realização de Vendas  | O sistema permitirá fazer vendas condicionais gerando código para os mesmos, que posteriormente podem ser recuperados e passarem para venda fechada. | Alta |
 | RF008 | Realização de Vendas  | Em qualquer tipo de venda será obrigatório o preenchimento do cliente que está realizando a compra, o vendedor e o tipo da venda. | Alta |
 | RF009 | Realização de Vendas  | No momento de efetuar alguma venda será necessário selecionar produtos. O sistema permitirá selecionar somente produtos que estejam em estoque e disponíveis para venda e a quantidade disponível em estoque. | Alta |
+| RF010 | Realização de Vendas  | Cada venda terá um atributo chamado “tipo_venda”, onde será possível identificar se a venda é um orçamento ou se é uma venda condicional.  | Alta |
+| RF011 | Realização de Vendas  | Para vendas condicionais que não tiverem sido canceladas, será possível recuperá-las para a conferência dos produtos e a mesma poderá ser tornar uma venda fechada. Para fechar essa venda e serem geradas as prestações da mesma, será necessário apenas excluir as mercadorias devolvidas e finalizar com as mercadorias que o cliente quiser ficar. | Alta |
+| RF012 | Realização de Vendas  | Para recuperar alguma venda condicional será necessário informar apenas o CPF do cliente.  | Alta |
+| RF013 | Realização de Vendas  | Após qualquer venda ser fechada o valor da venda será agregado ao valor de vendas efetuadas pelo vendedor da venda e será agregado ao valor todal das vendas realizadas pela empresa | Alta |
+
+
 
 
 ### Requisitos não-funcionais
