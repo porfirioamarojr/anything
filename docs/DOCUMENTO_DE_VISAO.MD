@@ -37,7 +37,7 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 |RNF002| Geral |  As informações serão armazenadas em um Banco de Dados.  |
 |RNF003| Acesso ao Sistema |  O sistema poderá ser acessado somente pelo administrador do sistema e pelos vendedores devidamente cadastradas no sistema |
 |RNF004|  Acesso ao Sistema | O acesso ao sistema se dará pela informação de usuário e senha |
-|RNF005| Permissões do Sistema | O administrador do sistema terá acesso à todas as áreas do sistema, com permissão de leitura, exclusão, inclusão e alteração. |
+|RNF005| Permissões do Sistema: Administrador | O administrador do sistema terá acesso à todas as áreas do sistema, com permissão de leitura, exclusão, inclusão e alteração. |
 |RNF006| Permissões do Sistema: Vendedores | Permissão para realizar todos os tipos de cadastros, alterações e exclusões nos mesmos |
 |RNF007|  Permissões do Sistema: Vendedores | Permissão para realizar vendas condicionais tanto de clientes da loja como dos vendedores externas |
 |RNF008|  Permissões do Sistema: Vendedores | Permissão para efetuar pagamentos de prestações de clientes|
@@ -46,7 +46,14 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 |RNF011|  Permissões do Sistema: Vendedores | Não é permitido fazer nenhum tipo de lançamento no caixa|
 |RNF012|  Permissões do Sistema: Vendedores | Permissão para concluir vendas no sistema|
 
-### Perfis dos usuários (características dos usuários)
+### Perfis dos usuários
+|| Administrador
+  Responsavel por 
+|| Clientes
+nome e endereço completo, CPF, data de nascimento, sendo estes campos obrigatórios. 
+|| Vendedores
+|| e-commerce
+
 ### Riscos
 ### Suposições e dependências
 ### Perspectiva do produto (dá uma visão geral de como o produto funcionará. Pode ser um protótipo de telas feito a mão ou não)
