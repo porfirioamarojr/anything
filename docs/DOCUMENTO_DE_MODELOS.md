@@ -12,4 +12,16 @@ O código referente ao diagrama:
 
 Para mais informações sobre a utilização do yUML acesse o link:
 
-[Tutorial](https://yuml.me/diagram/plain/class/samples)
+[Tutorial](https://yuml.me/diagram/plain/class/samples)  
+
+## Modelo de Dados
+
+Representação de Modelo gerado pelo Draw.io:
+
+![diagrama](diagramas/modeloDados.png)  
+
+Conteúdo de Leitura
+  
+[Tutorial](https://www.devmedia.com.br/modelagem-de-dados-tutorial/20398)
+
+
