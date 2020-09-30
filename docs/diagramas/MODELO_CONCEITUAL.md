@@ -1,0 +1,19 @@
+# Código do Modelo Conceitual gerado a partir do yUML
+```
+[Produto]
+[Carrinho]
+[Pagamento]
+[Cartão]
+[Conta]
+[Endereço]
+[Administrador]
+[Cliente]
+[Produto]<>*-1>[Carrinho]
+[Carrinho]<>1-1>[Pagamento]
+[Pagamento]++*-1>[Cartão]
+[Carrinho]++1-1>[Conta]
+[Endereço]++1-1>[Conta]
+[Conta]++1-1>[Administrador]
+[Conta]++*-*>[Cliente]
+[Cartão]<>1-1>[Cliente]
+```
