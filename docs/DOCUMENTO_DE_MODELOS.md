@@ -18,7 +18,7 @@ Para mais informações sobre a utilização do yUML acesse o link:
 
 Representação de Modelo gerado pelo Draw.io:
 
-![diagrama](diagramas/modeloDados.png)  
+![diagrama](diagramas/MODELO_DADOS.png)  
 
 Conteúdo de Leitura
   
