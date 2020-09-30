@@ -26,8 +26,6 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 | RF013 | Realização de Vendas  | Após qualquer venda ser fechada o valor da venda será agregado ao valor de vendas efetuadas pelo vendedor da venda e será agregado ao valor todal das vendas realizadas pela empresa | Alta |
 
 
-
-
 ### Requisitos não-funcionais
 ### Perfis dos usuários (características dos usuários)
 ### Riscos
