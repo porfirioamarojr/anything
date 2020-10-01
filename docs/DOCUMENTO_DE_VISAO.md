@@ -85,3 +85,8 @@ A determinação de dependências implica na sequência da execução das ativid
 * Montar um cronograma para as atividades desenvolvidas no projeto, tendo em vista o cumprimento de outros projetos e avaliações em componentes curriculares diferentes;
 4. Dependências internas
 * Ficar atento às regras de negócios e definir bem a cláusula para quando houver solicitação de alteração da lógica de negócio por parte do cliente.
+
+# Perspectiva do produto
+A perspectiva geral do projeto Anything é promover uma plataforma online de venda de produtos, onde os usuários (que são os clientes do serviço) podem consultar produtos e verificar a disponibilidade de estoque para efetuar a compra, dependendo da disponibilidade, o cliente poderá fazer suas compras tranquilamente. Já no perfil de administrador (responsável pelo gerenciamento do serviço), tem acesso a lista de usuários e manutenção dos perfis de fornecedores dos produtos, onde estará sendo anexado na base de dados do sistema, permitindo a consulta por parte do usuário e o interesse de efetuar os pedidos.
+
+O intuito do projeto é promover uma plataforma fluida e fácil de operar, e buscar uma solução viável de rápido acesso, através da internet, para um ramo que movimenta boa parte dos negócios na região e valorizar o comércio local para divulgar para outras regiões e até pro mundo inteiro.
