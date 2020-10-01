@@ -1,43 +1,17 @@
 #Plano de Iteração
 
-Este plano de iteração será usando como exemplo da disciplina Engenharia de Software II.
-Calendário da Iterações
+Este plano de iteração pode ser flexibilizado será usado como base para Oraganizar as tarefas realizadas pelo grupo de alunos de Engenharia de Software II.
+
+##Calendário da Iterações
 
  Iteração | Data início | Data Final | Apresentação | Gerente | Detalhes
  -------- | ----------- | ---------- | ------------ | ------- | --------
  It1      | 17/09/2020  | 02/09/2020 | 01/09/2020   | Gerente 1 | Criar Documento de Visão, Modelos e Plano de Iteração e Release
-
-It2
-27/09/2020
-09/10/2020
-08/10/2020
-Gerente 2
-Implementar US00, Detalhar US01, US02
-It3
-11/10/2020
-24/10/2020
-23/10/2020
-Gerente 3
-Implementar US01, US02, Detalhar US03, US04, Testar US00
-It4
-25/10/2020
-07/11/2020
-06/11/2020
-Gerente 4
-
-
-It5
-08/11/2020
-21/11/2020
-20/11/2020
-Gerente 5
-
-
-It6
-22/11/2020
-05/12/2020
-04/12/2020
-Gerente 6
+ It2      | 27/09/2020  | 09/10/2020 | 08/10/2020   | Gerente 2 | Implementar US00, Detalhar US01, US02
+ It3      | 11/10/2020  | 24/10/2020 | 23/10/2020   | Gerente 3 | Implementar US01, US02, Detalhar US03 US04, Testar US00
+ It4      | 25/10/2020  | 07/11/2020 | 06/11/2020   | Gerente 4
+ It5      | 08/11/2020  | 21/11/2020 | 20/11/2020   | Gerente 5
+ It6      | 22/11/2020  | 05/12/2020 | 04/12/2020   | Gerente 6
 
 
 Observação 1: Cada Iteração de ser cadastrada como Milestones no GitHub.
