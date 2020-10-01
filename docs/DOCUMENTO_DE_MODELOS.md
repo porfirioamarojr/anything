@@ -1,7 +1,5 @@
 # Documento de Modelos
 
-## Modelo Conceitual
-
 ## Entidades  
 * Produto - apresenta dados referentes ao produto: nome, descrição e valor;
 * Carrinho - contém valor subtotal de todos os itens passados ao carrinho;
@@ -11,6 +9,8 @@
 * Endereço - Informações de localizadade da Coonta dos usuários;
 * Cliente - usuário que compra;
 * Admnistrador = usuário com maiores prioridades;
+
+## Modelo Conceitual
 
 Segue em anexo a representação gráfica do modelo gerado a partir do yUML:
 
