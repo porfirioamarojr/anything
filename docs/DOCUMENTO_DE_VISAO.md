@@ -62,5 +62,30 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 
 
 
+### Suposições e dependências
+A seguir será classificado as suposições presentes no desenvolvimento do projeto, teremos como base a análise de acontecimentos internos e externos, que podem influenciar no andamento do mesmo e que servem de base para o acompanhamento e melhor tomada de decisão do gerente e da divisão de tarefas da equipe de analistas.
+1. Tempo
+* Estimar o tempo gasto necessário para conclusão do projeto até o dia da apresentação final no componente curricular e ter atingido a última iteração com sucesso dentro do prazo estabelecido pelo cliente (Docente);
+2. Recursos 
+* Delegar tarefas para não sobrecarregar membros da equipe e fazer reuniões periódicas para acompanhamento do projeto e propor as novas metas a serem alcançadas;
+3. Design e desenvolvimento
+* Escolher bem o layout, com base na preferência do cliente, e utilizar as melhores estratégias que as
+ferramentas de desenvolvimento tenha a oferecer;
+4. Tecnologia
+* Aprimorar os conhecimentos na tecnologia escolhida e buscar produtividade com maior rapidez, pois de acordo com a complexidade dos módulos do sistema, a equipe deve estar com o domínio da documentação da linguagem utilizada para melhor suporte e discussão;
+5. Qualidade
+* Passar confiança para o cliente (Docente), tanto na parte de segurança dos dados até a implementação de uma interface rápida e intuitiva.
+
+A determinação de dependências implica na sequência da execução das atividades e da lógica do negócio. Por isso alguns fatores devem ser discutidos na reunião com o cliente (Docente) para definição de prioridade dos módulos e da interligação existente entre eles. Será listado as principais dependências e como será feito a análise por parte da gerência para a estratégia de andamento do projeto.
+1. Dependências obrigatórias
+* Seguir o modelo conceitual definido pelo contrato, analisar bem os requisitos e as regras de negócio para não entregar um projeto paralelo e que não cumpra com o pré-estabelecido;
+2. Dependências arbitradas
+* Uma iteração, dependendo do caso, terá que ser iniciado após a conclusão da anterior;
+3. Dependências externas
+* Montar um cronograma para as atividades desenvolvidas no projeto, tendo em vista o cumprimento de outros projetos e avaliações em componentes curriculares diferentes;
+4. Dependências internas
+* Ficar atento às regras de negócios e definir bem a cláusula para quando houver solicitação de alteração da lógica de negócio por parte do cliente.
+
+
 
 
