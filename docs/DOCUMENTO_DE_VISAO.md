@@ -9,10 +9,10 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 
 ## Descrição geral
 ### Requisitos funcionais
-|  CÓD 	|   REQUISITO	| DESCRIÇÃO | DETALHAMENTO|  PRIORIDADE
+|  CÓD 	|   REQUISITO	| DESCRIÇÃO | DETALHAMENTO |  PRIORIDADE
 |---	|---	|---  |--- | --- |
-|  RF001 	|  Cadastro de Produtos | No RF001 será possivel realizar o cadastro de produtos| codigo, nome, preço, tipo do produto, detalhes do produto (quantidade, tamanho e cor dos produtos) | Alta |
-| RF002 | Cadastro de Clientes | No cadastro de clientes será obrigatório o preenchimento dos seguintes campos: CPF, nome completo, nome da mãe, data de nascimento, endereço (rua, bairro e cidade (chave estrangeira da tabela Cidades)), e telefone.  | Alta |
+|  RF001 	|  Cadastro de Produtos | No RF001 será possivel realizar o cadastro de todos os produtos| codigo, nome, preço, tipo do produto, detalhes do produto (quantidade, tamanho e cor dos produtos) | Alta |
+| RF002 | Cadastro de Clientes | Para o cliente poder fazer uma compra ele tem que ser cadastrado no sistema, o CPF será a PK da tabela, será coletado também o e-mail do cliente, para poder enviar algumas informações, como cupons de desconto, promoções, entre outras coisas  | CPF, nome completo, nome da mãe, data de nascimento, endereço (rua, bairro e cidade ), e-mail e telefone.  | Alta |
 | RF003 | Cadastro de Cidades | No cadastro de cidades será obrigatório o preenchimento dos seguintes campos: nome e estado. | Média | 
 | RF004 |  Cadastro de Revendedores |  No cadastro de revendedoras será obrigatório o preenchimento dos seguintes campos: CPF, nome completo, data de nascimento, endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)) e telefone. | Baixa |
 | RF005 | Cadastro de Fornecedores | No cadastro de fornecedores será obrigatório o preenchimento dos seguintes campos: nome, telefone, CNPJ ou CPF e endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)). | Alta |
