@@ -9,9 +9,9 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 
 ## Descrição geral
 ### Requisitos funcionais
-|  CÓD 	|   REQUISITO	| DESCRIÇÃO | PRIORIDADE
-|---	|---	|---  |--- |
-|  RF001 	|  Cadastro de Produtos | No cadastro de produtos será obrigatório o preenchimento dos seguintes campos: nome e preço e terá outra tabela associada à ela chamada “detalhes” que conterá a quantidade, tamanho e cor dos produtos. | Alta |
+|  CÓD 	|   REQUISITO	| DESCRIÇÃO | DETALHAMENTO|  PRIORIDADE
+|---	|---	|---  |--- | --- |
+|  RF001 	|  Cadastro de Produtos | No RF001 será possivel realizar o cadastro de produtos| codigo, nome, preço, tipo do produto, detalhes do produto (quantidade, tamanho e cor dos produtos) | Alta |
 | RF002 | Cadastro de Clientes | No cadastro de clientes será obrigatório o preenchimento dos seguintes campos: CPF, nome completo, nome da mãe, data de nascimento, endereço (rua, bairro e cidade (chave estrangeira da tabela Cidades)), e telefone.  | Alta |
 | RF003 | Cadastro de Cidades | No cadastro de cidades será obrigatório o preenchimento dos seguintes campos: nome e estado. | Média | 
 | RF004 |  Cadastro de Revendedores |  No cadastro de revendedoras será obrigatório o preenchimento dos seguintes campos: CPF, nome completo, data de nascimento, endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)) e telefone. | Baixa |
