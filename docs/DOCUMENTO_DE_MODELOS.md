@@ -39,21 +39,25 @@ Conteúdo de Leitura
 Um dicionário de dados é uma coleção de metadados que contêm definições e representações de elementos de dados. O paradigma utilizado no projeto para a representação dos dados é representado nas tabelas abaixo:
 
 
-Entidade: Cliente
+### Entidade: Cliente
 
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
  cpf      | primary key   | Numérico     | Não pode ser nulo. | Apenas números 
  cartao   | foreign key   | Numérico     | Não pode ser nulo. | Apenas números
 
+
 ### Entidade: Administrador
+
 
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
  cpf      | primary key   | Numérico    | Não pode ser nulo. | Apenas números 
- 
+
+
 ### Entidade: Conta
- 
+
+
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação |
  -------- | ------------- | ------------ | --------- | ----------
  cpf      | foreign key   | Numérico     | Não pode ser nulo. | Apenas números 
@@ -64,9 +68,11 @@ Entidade: Cliente
  data_nascimento | - | Data | Não pode ser nulo. | - 
  telefone | - | Numérico | Não pode ser nulo. | - 
  endereco | foreign key | Endereço | Não pode ser nulo. | - 
- 
+
+
 ### Entidade: Endereço
- 
+
+
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
  rua | - | Alfanumérico | Não pode ser nulo. | - 
@@ -75,33 +81,41 @@ Entidade: Cliente
  nome | - | Alfanumérico | Não pode ser nulo. | - 
  cep | - | Numérico | Não pode ser nulo. | - 
  referencia | - | Alfanumérico | - | - 
- 
+
+
 ### Entidade: Carrinho
- 
+
+
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
  id_vendas | primary key | Numérico | Não pode ser nulo. | Auto-incremento
  total | - | Numérico | Não pode ser nulo. | Apenas números
  produto | foreign key | Texto | Não pode ser nulo. | - 
- 
+
+
 ### Entidade: Produto
- 
+
+
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
  id_produtos | primary key | Numérico | Não pode ser nulo. | Auto-incremento
  nome | - | Numérico | Não pode ser nulo. | Apenas números
  valor | - | Real | Não pode ser nulo. | Apenas números
  descricao | - | Texto | - | -
- 
+
+
 ### Entidade: Pagamento
- 
+
+
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
  -------- | ------------- | ------------ | --------- | ----------
  id_pagamento | primary key | Numérico | Não pode ser nulo. |Auto-incremento
  desconto | - | Numérico | Não pode ser nulo. | Apenas números
  total | - | Real | Não pode ser nulo. | Apenas números
- 
+
+
 ### Entidade: Cartão
+
  
  Atributo | Tipo de chave | Tipo de dado | Restrição |Observação
  -------- | ------------- | ------------ | --------- | ----------
