@@ -48,12 +48,6 @@ Data | Versão | Descrição | Autor
 |---|---|
 |  **TA01.01**  | O usuário informa na tela, todos os dados para registrar o endereço corretamente, ao clicar em salvar ele receberá uma mensagem de confirmação de "Cadastro Completo". |
 |   **TA01.02**  | O usuário informa, na tela de registrar endereço, os dados para registrar  incorretamente, ao clicar em salvar ele é notificado com uma mensagem de erro. |
-
-### Testes de Aceitação (TA)
-| Código | Descrição |
-|---|---|
-|  **TA01.01**  | O usuário informa, na tela Registrar, todos os dados para registrar-se corretamente, ao clicar em salvar ele é redirecionado para uma nova tela na qual cadastrará seu endereço.  |
-|   **TA01.02**  | O usuário informa, na tela Registrar, os dados para registrar-se incorretamente, ao clicar em salvar ele é notificado com uma mensagem de erro. |
  
 ### User Story US03 - Login do Usuário
 
