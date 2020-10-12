@@ -17,7 +17,7 @@ Data | Versão | Descrição | Autor
  
  ### Lista de User Stories
    
-#### User Story US01 - Cadastro Dados Pessoais do Usuário
+### User Story US01 - Cadastro Dados Pessoais do Usuário
 
 | **Descrição**  | O sistema deve manter um cadastro de dados pessoais do usuário e armazená-lo no banco de dados para em seguida ter acesso ao sistema via login e senha. Um usuário tem os atributos nome, endereço, email, senha, cpf, idade, Sexo, data de nascimento e telefone.
 |---|---|
@@ -27,13 +27,13 @@ Data | Versão | Descrição | Autor
 |  **Tempo Gasto Real:** |   | 
 |  **Tamanho Funcional**  |   |  
 
-#### Testes de Aceitação (TA)
+### Testes de Aceitação (TA)
 | Código | Descrição |
 |---|---|
 |  **TA01.01**  | O usuário informa, na tela Registrar, todos os dados para registrar-se corretamente, ao clicar em salvar ele é redirecionado para uma nova tela na qual cadastrará seu endereço.  |
 |   **TA01.02**  | O usuário informa, na tela Registrar, os dados para registrar-se incorretamente, ao clicar em salvar ele é notificado com uma mensagem de erro. |
  
-#### User Story US02 - Cadastro de Endereço do Usuário
+### User Story US02 - Cadastro de Endereço do Usuário
 
 | **Descrição**  | Após cadastrar os dados pessoais, o usuáro será redirecionado para uma nova tela na qual irá cadastrar dados de endereço: rua, cidade, cep, numero, bairro, referência.
 |---|---|
@@ -43,19 +43,19 @@ Data | Versão | Descrição | Autor
 |  **Tempo Gasto Real:** |   | 
 |  **Tamanho Funcional**  |   |  
 
-#### Testes de Aceitação (TA)
+### Testes de Aceitação (TA)
 | Código | Descrição |
 |---|---|
 |  **TA01.01**  | O usuário informa na tela, todos os dados para registrar o endereço corretamente, ao clicar em salvar ele receberá uma mensagem de confirmação de "Cadastro Completo". |
 |   **TA01.02**  | O usuário informa, na tela de registrar endereço, os dados para registrar  incorretamente, ao clicar em salvar ele é notificado com uma mensagem de erro. |
 
-#### Testes de Aceitação (TA)
+### Testes de Aceitação (TA)
 | Código | Descrição |
 |---|---|
 |  **TA01.01**  | O usuário informa, na tela Registrar, todos os dados para registrar-se corretamente, ao clicar em salvar ele é redirecionado para uma nova tela na qual cadastrará seu endereço.  |
 |   **TA01.02**  | O usuário informa, na tela Registrar, os dados para registrar-se incorretamente, ao clicar em salvar ele é notificado com uma mensagem de erro. |
  
-#### User Story US03 - Login do Usuário
+### User Story US03 - Login do Usuário
 
 | **Descrição**  | Após o cadastro de dados pessoais o  usuário estará habilidade para fazer login |
 |---|---|
@@ -65,7 +65,7 @@ Data | Versão | Descrição | Autor
 |  **Tempo Gasto Real:** |   | 
 |  **Tamanho Funcional**  |   |  
 
-#### Testes de Aceitação (TA)
+### Testes de Aceitação (TA)
 | Código | Descrição |
 |---|---|
 |  **TA01.01**  | O usuário informa corretamente na tela seu email e senha e entra no sistema |
