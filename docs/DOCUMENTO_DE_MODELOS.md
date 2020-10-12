@@ -5,11 +5,11 @@
 * Carrinho - Contém valor subtotal de todos os itens passados ao carrinho;
 * Pagamento - Contém o valor total da compra, se houve cupom de desconto e método de pagamento;
 * Cartão - Contém informações relevantes ao cartão de crédito do Cliente;
-* Conta - Contém informações pessoais em comum de dos usuários Cliente e Admnistrador;
-* Endereço - Informações de localizadade da Coonta dos usuários;
+* Conta - Contém informações pessoais em comum de dos usuários Cliente e Administrador;
+* Endereço - Informações de localidade da conta dos usuários;
 * Cliente - Usuário que compra;
 * Administrador - Usuário com maiores prioridades;
-* Vendedor - Usuário que tem prioridade de cadastra produtos.
+* Vendedor - Usuário que tem prioridade de cadastrar produtos.
 
 ## Modelo Conceitual
 
