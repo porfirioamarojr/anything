@@ -9,11 +9,13 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 
 ## Descrição geral
 ### Requisitos funcionais
-|  CÓD 	|   REQUISITO	| DESCRIÇÃO | PRIORIDADE
-|---	|---	|---  |--- |
-|  RF001 	|  Cadastro de Produtos | No cadastro de produtos será obrigatório o preenchimento dos seguintes campos: nome e preço e terá outra tabela associada à ela chamada “detalhes” que conterá a quantidade, tamanho e cor dos produtos. | Alta |
-| RF002 | Cadastro de Clientes | No cadastro de clientes será obrigatório o preenchimento dos seguintes campos: CPF, nome completo, nome da mãe, data de nascimento, endereço (rua, bairro e cidade (chave estrangeira da tabela Cidades)), e telefone.  | Alta |
-| RF003 | Cadastro de Cidades | No cadastro de cidades será obrigatório o preenchimento dos seguintes campos: nome e estado. | Média | 
+|  CÓD 	|   REQUISITO	| DESCRIÇÃO | DETALHAMENTO |  PRIORIDADE
+|---	|---	|---  |--- | --- |
+|  RF001 	|  Cadastro de Produtos | No RF001 será possivel realizar o cadastro de todos os produtos| codigo, nome, preço, tipo do produto, detalhes do produto (quantidade, tamanho e cor dos produtos) | Alta |
+| RF002 | Cadastro de Clientes | Para o cliente poder fazer uma compra ele tem que ser cadastrado no sistema, o CPF será a PK da tabela, será coletado também o e-mail do cliente, para poder enviar algumas informações, como cupons de desconto, promoções, entre outras coisas  | CPF, nome completo, nome da mãe, data de nascimento, endereço (rua, bairro e cidade ), e-mail e telefone.  | Alta |
+| RF003 | Cadastro de Cidades | No cadastro de cidades será obrigatório o preenchimento das informações referente as cidades,  | nome e estado | Média | 
+
+
 | RF004 |  Cadastro de Revendedores |  No cadastro de revendedoras será obrigatório o preenchimento dos seguintes campos: CPF, nome completo, data de nascimento, endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)) e telefone. | Baixa |
 | RF005 | Cadastro de Fornecedores | No cadastro de fornecedores será obrigatório o preenchimento dos seguintes campos: nome, telefone, CNPJ ou CPF e endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)). | Alta |
 | RF006 | Cadastro de Fornecedores | No momento de efetuar qualquer cadastro o sistema irá gerar automaticamente um código. Este será seu identificador o qual será utilizado para acesso a suas informações e, no caso de produtos, para sua identificação no momento da realização de uma venda.  | Alta |
@@ -90,3 +92,5 @@ A determinação de dependências implica na sequência da execução das ativid
 A perspectiva geral do projeto Anything é promover uma plataforma online de venda de produtos, onde os usuários (que são os clientes do serviço) podem consultar produtos e verificar a disponibilidade de estoque para efetuar a compra, dependendo da disponibilidade, o cliente poderá fazer suas compras tranquilamente. Já no perfil de administrador (responsável pelo gerenciamento do serviço), tem acesso a lista de usuários e manutenção dos perfis de fornecedores dos produtos, onde estará sendo anexado na base de dados do sistema, permitindo a consulta por parte do usuário e o interesse de efetuar os pedidos.
 
 O intuito do projeto é promover uma plataforma fluida e fácil de operar, e buscar uma solução viável de rápido acesso, através da internet, para um ramo que movimenta boa parte dos negócios na região e valorizar o comércio local para divulgar para outras regiões e até pro mundo inteiro.
+
+
