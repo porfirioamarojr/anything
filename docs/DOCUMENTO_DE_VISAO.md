@@ -11,12 +11,10 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 ### Requisitos funcionais
 |  CÓD 	|   REQUISITO	| DESCRIÇÃO | DETALHAMENTO |  PRIORIDADE
 |---	|---	|---  |--- | --- |
-|  RF001 	|  Cadastro de Produtos | No RF001 será possivel realizar o cadastro de todos os produtos| codigo, nome, preço, tipo do produto, detalhes do produto (quantidade, tamanho e cor dos produtos) | Alta |
+|  RF001 	|  Cadastro de Produtos | No RF001 será possivel realizar o cadastro de todos os produtos, como também a atualização, remoção e pesquisar todos os produtos cadastrados | codigo, nome, preço, tipo do produto, detalhes do produto (quantidade, tamanho e cor dos produtos) | Alta |
 | RF002 | Cadastro de Clientes | Para o cliente poder fazer uma compra ele tem que ser cadastrado no sistema, o CPF será a PK da tabela, será coletado também o e-mail do cliente, para poder enviar algumas informações, como cupons de desconto, promoções, entre outras coisas  | CPF, nome completo, nome da mãe, data de nascimento, endereço (rua, bairro e cidade ), e-mail e telefone.  | Alta |
-| RF003 | Cadastro de Cidades | No cadastro de cidades será obrigatório o preenchimento das informações referente as cidades,  | nome e estado | Média | 
-
-
-| RF004 |  Cadastro de Revendedores |  No cadastro de revendedoras será obrigatório o preenchimento dos seguintes campos: CPF, nome completo, data de nascimento, endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)) e telefone. | Baixa |
+| RF003 | Cadastro de Cidades | No cadastro de cidades será obrigatório o preenchimento das informações referente as cidades  | nome e estado | Média | 
+| RF004 | Cadastro de Vendedores | Os vendedores serão os interessados por vender na plataforma | CPF, nome completo, data de nascimento, endereço (rua, bairro, CEP, cidade) e-mail e telefone. | Media |
 | RF005 | Cadastro de Fornecedores | No cadastro de fornecedores será obrigatório o preenchimento dos seguintes campos: nome, telefone, CNPJ ou CPF e endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)). | Alta |
 | RF006 | Cadastro de Fornecedores | No momento de efetuar qualquer cadastro o sistema irá gerar automaticamente um código. Este será seu identificador o qual será utilizado para acesso a suas informações e, no caso de produtos, para sua identificação no momento da realização de uma venda.  | Alta |
 | RF007 | Realização de Vendas  | O sistema permitirá fazer vendas condicionais gerando código para os mesmos, que posteriormente podem ser recuperados e passarem para venda fechada. | Alta |
@@ -50,10 +48,10 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 |RNF013|  Portabilidade |O sistema deve executar em sistemas operacionais Linux, Windows, Android ou IOS mediante uso de navegador de internet.|
 
 ### Perfis dos usuários
-|| Administrador
-|| Clientes
-|| Vendedores
-|| e-commerce
+|| Administrador - responsavel por fazer todas as funções no sistema
+|| Usuario - o usuario pode fazer pesquisas dos produtos, fazer compras e alterar o proprio cadastro
+|| Vendedores - ( se virar marketplace o vendedor seria as pessoas interessadas em vender alguma coisa na plataforma)
+|| e-commerce - efetua as vendas, calcula frete, organiza descontos
 
 ### Riscos
 |  DATA  	|   RISCO	|  PRIORIDADE | STATUS |   PROVIDÊNCIA/SOLUÇÃO 
