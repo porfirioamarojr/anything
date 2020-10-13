@@ -11,26 +11,22 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 ### Requisitos funcionais
 |  CÓD 	|   REQUISITO	| DESCRIÇÃO | DETALHAMENTO |  PRIORIDADE
 |---	|---	|---  |--- | --- |
-|  RF001 	|  Cadastro de Produtos | No RF001 será possivel realizar o cadastro de todos os produtos| codigo, nome, preço, tipo do produto, detalhes do produto (quantidade, tamanho e cor dos produtos) | Alta |
-| RF002 | Cadastro de Clientes | Para o cliente poder fazer uma compra ele tem que ser cadastrado no sistema, o CPF será a PK da tabela, será coletado também o e-mail do cliente, para poder enviar algumas informações, como cupons de desconto, promoções, entre outras coisas  | CPF, nome completo, nome da mãe, data de nascimento, endereço (rua, bairro e cidade ), e-mail e telefone.  | Alta |
-| RF003 | Cadastro de Cidades | No cadastro de cidades será obrigatório o preenchimento das informações referente as cidades,  | nome e estado | Média | 
-
-
-| RF004 |  Cadastro de Revendedores |  No cadastro de revendedoras será obrigatório o preenchimento dos seguintes campos: CPF, nome completo, data de nascimento, endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)) e telefone. | Baixa |
-| RF005 | Cadastro de Fornecedores | No cadastro de fornecedores será obrigatório o preenchimento dos seguintes campos: nome, telefone, CNPJ ou CPF e endereço (rua, bairro, CEP e cidade (chave estrangeira da tabela Cidades)). | Alta |
-| RF006 | Cadastro de Fornecedores | No momento de efetuar qualquer cadastro o sistema irá gerar automaticamente um código. Este será seu identificador o qual será utilizado para acesso a suas informações e, no caso de produtos, para sua identificação no momento da realização de uma venda.  | Alta |
-| RF007 | Realização de Vendas  | O sistema permitirá fazer vendas condicionais gerando código para os mesmos, que posteriormente podem ser recuperados e passarem para venda fechada. | Alta |
-| RF008 | Realização de Vendas  | Em qualquer tipo de venda será obrigatório o preenchimento do cliente que está realizando a compra, o vendedor e o tipo da venda. | Alta |
-| RF009 | Realização de Vendas  | No momento de efetuar alguma venda será necessário selecionar produtos. O sistema permitirá selecionar somente produtos que estejam em estoque e disponíveis para venda e a quantidade disponível em estoque. | Alta |
-| RF010 | Realização de Vendas  | Cada venda terá um atributo chamado “tipo_venda”, onde será possível identificar se a venda é um orçamento ou se é uma venda condicional.  | Alta |
-| RF011 | Realização de Vendas  | Para vendas condicionais que não tiverem sido canceladas, será possível recuperá-las para a conferência dos produtos e a mesma poderá ser tornar uma venda fechada. Para fechar essa venda e serem geradas as prestações da mesma, será necessário apenas excluir as mercadorias devolvidas e finalizar com as mercadorias que o cliente quiser ficar. | Alta |
-| RF012 | Realização de Vendas  | Para recuperar alguma venda condicional será necessário informar apenas o CPF do cliente.  | Alta |
-| RF013 | Realização de Vendas  | Após qualquer venda ser fechada o valor da venda será agregado ao valor de vendas efetuadas pelo vendedor da venda e será agregado ao valor todal das vendas realizadas pela empresa | Alta |
-| RF014 | Realização de Vendas  | Ao ser finalizada uma venda, o(s) produto(s) vendido(s) deverá(ão) ficar indisponível para a venda e o mesmo será decrementado do valor total de unidades disponíveis.  | Alta |
-| RF015 | Cálculo das Parcelas   | O sistema irá gerar automaticamente o valor das parcelas para o vendedor, sendo necessário apenas informar o(s) produto(s), data de vencimento, se será feito com ou sem entrada e o valor da entrada  | Media |
-| RF016 | Cálculo das Parcelas  | Será permitido, dentro do valor estipulado para os vendedores, descontos no momento da realização da venda.  | Media |
-| RF017 | Controle de Caixa   | Ao ser paga uma prestação por um cliente a mesma entrará como entrada no dia correspondente a efetivação do pagamento. | Media |
-| RF018 | Controle de Caixa | Poderá ser calculado no final de cada dia o lucro da empresa. | Media |
+|  RF001 	|  Cadastro de Produtos | No RF001 será possivel realizar o cadastro de todos os produtos, como também a atualização, remoção e pesquisar todos os produtos cadastrados | codigo, nome, preço, tipo do produto, detalhes do produto (quantidade, tamanho e cor dos produtos) | Alta |
+| RF002 | Cadastro de Clientes | Para o cliente poder fazer uma compra ele tem que ser cadastrado no sistema, o CPF será a PK da tabela, será coletado também o e-mail do cliente, para poder enviar algumas informações, como cupons de desconto, promoções, entre outras coisas, vai ser possivel realizar também atualização dos dados de cadastro, fazer o delete e pesquisar todos os clientes cadastrados  | CPF, nome completo, nome da mãe, data de nascimento, endereço (rua, bairro e cidade ), e-mail e telefone.  | Alta |
+| RF003 | Cadastro de Cidades | No cadastro de cidades será obrigatório o preenchimento das informações referente as cidades  | nome e estado | Média | 
+| RF004 | Cadastro de Vendedores | Os vendedores serão os interessados por vender na plataforma, é possivel realizar cadastro dos vendedores, a atualização dos dados, como também a remoção e pesquisa dos mesmos, os vendedores podem cadastrar um produto e referenciar a ele mesmo | CPF, nome completo, data de nascimento, endereço (rua, bairro, CEP, cidade) e-mail e telefone. | Alta |
+| RF005 | Realização de Vendas  | O sistema permitirá fazer vendas condicionais gerando código para os mesmos, que posteriormente podem ser recuperados e passarem para venda fechada. |  | Alta |
+| RF006 | Realização de Vendas  | Em qualquer tipo de venda será obrigatório o preenchimento do cliente que está realizando a compra, o vendedor e o tipo da venda. |  | Alta |
+| RF007 | Realização de Vendas  | No momento de efetuar alguma venda será necessário selecionar produtos. O sistema permitirá selecionar somente produtos que estejam em estoque e disponíveis para venda e a quantidade disponível em estoque. | | Alta |
+| RF008| Realização de Vendas  | Cada venda terá um atributo chamado “tipo_venda”, onde será possível identificar se a venda é um orçamento ou se é uma venda condicional.|  | Alta |
+| RF009 | Realização de Vendas  | Para vendas condicionais que não tiverem sido canceladas, será possível recuperá-las para a conferência dos produtos e a mesma poderá ser tornar uma venda fechada. Para fechar essa venda e serem geradas as prestações da mesma, será necessário apenas excluir as mercadorias devolvidas e finalizar com as mercadorias que o cliente quiser ficar.| | Alta |
+| RF010 | Realização de Vendas  | Para recuperar alguma venda condicional será necessário informar apenas o CPF do cliente. | | Alta |
+| RF011 | Realização de Vendas  | Após qualquer venda ser fechada o valor da venda será agregado ao valor de vendas efetuadas pelo vendedor da venda e será agregado ao valor todal das vendas | | Alta |
+| RF012 | Realização de Vendas  | Ao ser finalizada uma venda, o(s) produto(s) vendido(s) deverá(ão) ficar indisponível para a venda e o mesmo será decrementado do valor total de unidades disponíveis. | | Alta |
+| RF013 | Cálculo das Parcelas   | O sistema irá gerar automaticamente o valor das parcelas para o vendedor, sendo necessário apenas informar o(s) produto(s), data de vencimento, se será feito com ou sem entrada e o valor da entrada | | Media |
+| RF014 | Cálculo das Parcelas  | Será permitido, dentro do valor estipulado para os vendedores, descontos no momento da realização da venda. | | Media |
+| RF015 | Controle de Caixa   | Ao ser paga uma prestação por um cliente a mesma entrará como entrada no dia correspondente a efetivação do pagamento.| | Media |
+| RF016 | Controle de Caixa | Poderá ser calculado no final de cada dia o lucro da empresa.| | Media |
 
 ### Requisitos não-funcionais
 |  CÓD 	|   REQUISITO	| DESCRIÇÃO 
@@ -50,10 +46,13 @@ O sistema a ser desenvolvido será composto seguindo padrões de modelo web para
 |RNF013|  Portabilidade |O sistema deve executar em sistemas operacionais Linux, Windows, Android ou IOS mediante uso de navegador de internet.|
 
 ### Perfis dos usuários
-|| Administrador
-|| Clientes
-|| Vendedores
-|| e-commerce
+|| Administrador - responsavel por fazer todas as funções no sistema
+
+|| Usuario - o usuario pode fazer pesquisas dos produtos, fazer compras e alterar o proprio cadastro
+
+|| Vendedores - ( se virar marketplace o vendedor seria as pessoas interessadas em vender alguma coisa na plataforma)
+
+|| e-commerce - efetua as vendas, calcula frete, organiza descontos
 
 ### Riscos
 |  DATA  	|   RISCO	|  PRIORIDADE | STATUS |   PROVIDÊNCIA/SOLUÇÃO 
