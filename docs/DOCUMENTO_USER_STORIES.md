@@ -64,3 +64,6 @@ Data | Versão | Descrição | Autor
 |---|---|
 |  **TA01.01**  | O usuário informa corretamente na tela seu email e senha e entra no sistema |
 |   **TA01.02**  | O usuário informa incorretamente na tela seu email e senha para entrar no sistema e recebe mensagem de erro|
+
+### Tela 00
+![diagrama](img/TELA1.jpeg)
