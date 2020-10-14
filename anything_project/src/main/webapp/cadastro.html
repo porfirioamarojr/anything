@@ -6,39 +6,46 @@
 </head>
 
 <body>
-    <h1>Cadastro</h1>
-    <div id="secao">
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <section>
         <form action="./cadastro_endereco.html" method="post">
-            <p>Nome</p>
-            <input type="text"/>
-            <p>Email</p>
-            <input type="text"/>
-            <p>Cpf</p>
-            <input type="number"/>
-            <p>Idade</p>
-            <input type="number"/>
+            <fieldset>
+                <label>Nome</label>
+                <input type="text" required/>
+                <label>Email</label>
+                <input type="email" required/>
+            </fieldset>
+            
+            <label>Cpf</label>
+            <input type="number" required/>
+            <label>Idade</label>
+            <input type="number" required/>
 
-            <p>Sexo</p>
+            <label>Sexo</label>
             <div id="genero">
-                <input type="radio" name="genero" value="feminino"/>
-                <p>Masculino</p>
-                <input type="radio" name="genero" value="feminino"/>
-                <p>Feminino</p>
+                <input type="radio" name="genero" value="feminino" required/>
+                <label>Masculino</label>
+                <input type="radio" name="genero" value="feminino" required/>
+                <label>Feminino</label>
             </div>
                 
-            <p>Data de Nascimento</p>
-            <input type="date"/>
-            <p>Telefone</p>
-            <input type="text"/>
+            <label>Data de Nascimento</label>
+            <input type="date" required/>
+            <label>Telefone</label>
+            <input type="text" required/>
 
-            <p>Senha</p>
-            <input type="password"/>
-            <p>Confirme sua senha</p>
-            <input type="password"/>
-            <p></p>
+            <label>Senha</label>
+            <input type="password" required/>
+            <label>Confirme sua senha</label>
+            <input type="password" required/>
             <input type="submit" value="enviar"/>
         </form>
-    </div>
+    </section>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
