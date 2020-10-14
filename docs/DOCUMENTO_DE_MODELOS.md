@@ -29,7 +29,7 @@ Para mais informações sobre a utilização do yUML acesse o link:
 
 Representação de Modelo gerado pelo Draw.io:
 
-![diagrama](diagramas/MODELO_DADOS.png)  
+![diagrama](diagramas/MODELO_DADOS.jpg)  
 
 Conteúdo de Leitura
   
@@ -124,3 +124,4 @@ Um dicionário de dados é uma coleção de metadados que contêm definições e
  data | - | Data | Não pode ser nulo. | Apenas números
  nome_cartao | - | Numérico | Não pode ser nulo. | Apenas números
  cpf | - | Numérico |Não pode ser nulo. | Apenas números
+
