@@ -1,4 +1,4 @@
-<center>Documento Arquitetural</center>
+<align-center>Documento Arquitetural</align-center>
 
 ## Introdução a Arquitetura MVVM
 
