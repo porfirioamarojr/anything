@@ -49,58 +49,60 @@ Estas são estruturas de dados universais. Virtualmente todas as linguagens de p
 
 ## Sobre o Node JS
 Como um ambiente de execução JavaScript assíncrono orientado a eventos, o Node.js é projetado para desenvolvimento de aplicações escaláveis de rede. No exemplo a seguir, diversas conexões podem ser controladas ao mesmo tempo. Em cada conexão a função de callback é chamada. Mas, se não houver trabalho a ser realizado, o Node.js ficará inativo. Essa é uma alternativa que contrasta com o modelo de concorrência mais comum, onde são utilizadas threads do SO. Aplicações de rede baseadas em threads são relativamente ineficientes e difíceis de usar. Além disso, os usuários do Node.js não precisam se preocupar com deadlock de processos, pois não existem locks. Quase nenhuma função no Node.js realiza diretamente operações de E/S, por essa razão o processo nunca bloqueia. Por não existirem operações bloqueantes, sistemas escaláveis são razoavelmente fáceis de serem desenvolvidos em Node.js.
+
 ## Express JS
 Express é um popular framework web estruturado, escrito em JavaScript que roda sobre o ambiente node.js em tempo de execução. Este módulo explica alguns dos principais benefícios deste framework, como configurar o seu ambiente de desenvolvimento e como executar tarefas comuns de desenvolvimento e implantação da web.
 
 Alguns pontos sobre o framework Express.js:
-aplicativo
+### aplicativo
 Em geral, um ou mais programas que são designados a executar operações com um propósito específico. No contexto do Express, um programa que usa a API do Express executando na plataforma. Pode também se referir a um objeto app.
-API
+### API
 Interface de programação de aplicativos. Especifique o significado da abreviação no seu primeiro uso.
-Express
+### Express
 Uma estrutura web rápida, flexível e minimalista para aplicativos Node.js. Em geral, “Express” é preferido a “Express.js,” apesar de que o último ser aceitável.
-libuv
+### libuv
 Uma biblioteca de suporte multiplataforma que foca em E/S assíncrona, primeiramente desenvolvida para uso pelo Node.js.
-middleware
+### middleware
 Uma função que é chamada pela camada de roteamento do Express antes do manipulador final da solicitação, e assim ficando no meio, entre uma solicitação bruta a rota final desejada. Alguns poucos pontos de refinamento da terminologia envolvendo middleware:
-var foo = require('middleware') é chamado requerendo ou usando um módulo do Node.js. Então a instrução var mw = foo() tipicamente retorna o middleware.
-app.use(mw) é chamado incluindo o middleware na pilha global de processamento.
-app.get('/foo', mw, function (req, res) { ... }) é chamado *incluindo o middleware para a pilha de processamento do “GET /foo” *.
-Node.js
-Uma plataforma de software que é usada para construir aplicativos de rede escaláveis. O Node.js usa o JavaScript como linguagem de script, e alcança rendimentos altos através de E/S não bloqueante e um loop de eventos de thread única. Consulte nodejs.org. Nota de uso: Inicialmente, “Node.js,” posteriormente “Node”.
-open-source, open source
+ >* var foo = require('middleware') é chamado requerendo ou usando um módulo do Node.js. Então a instrução var mw = foo() tipicamente retorna o middleware.
+ >* app.use(mw) é chamado incluindo o middleware na pilha global de processamento.
+ >* app.get('/foo', mw, function (req, res) { ... }) é chamado *incluindo o middleware para a pilha de processamento do “GET /foo” *.
+### Node.js
+Uma plataforma de software que é usada para construir aplicativos de rede escaláveis. O Node.js usa o JavaScript como linguagem de script, e alcança rendimentos altos através de E/S não bloqueante e um loop de eventos de thread única. Consulte nodejs.org. **Nota de uso:** Inicialmente, “Node.js,” posteriormente “Node”.
+**open-source, open source**
 Quando usado como adjetivo, colocar o hífen; por exemplo “Este é um software open-source”. Consulte Software Open-source na Wikipedia. Nota: Apesar de ser comum não colocar o hífen neste termo, estamos usando as regras padrões do Inglês para colocar o hífen em adjetivos compostos.
-resposta
+**resposta**
 Uma resposta HTTP. Um servidor retorna uma mensagem de resposta HTTP para o cliente. A resposta contém informações do status de conclusão sobre a solicitação e pode também conter conteúdo da solicitação no corpo da mensagem.
-rota
+**rota**
 Parte de uma URL que identifica um recurso. Por exemplo, em http://foo.com/products/id, “/products/id” é a rota.
-roteador
+**roteador**
 Consulte roteador na referência da API.
-solicitação
+**solicitação**
 Uma solicitação HTTP. Um cliente envia uma mensagem HTTP para um servidor, que retorna uma resposta. A solicitação deve usar um dos vários métodos de solicitação como GET, POST, e assim por diante.
 
-## Banco de Dados
+**Banco de Dados**
 Um banco de dados é uma coleção organizada de informações - ou dados - estruturadas, normalmente armazenadas eletronicamente em um sistema de computador. Um banco de dados é geralmente controlado por um sistema de gerenciamento de banco de dados (DBMS). Juntos, os dados e o DBMS, juntamente com os aplicativos associados a eles, são chamados de sistema de banco de dados, geralmente abreviados para apenas banco de dados. Os dados nos tipos mais comuns de bancos de dados em operação atualmente são modelados em linhas e colunas em uma série de tabelas para tornar o processamento e a consulta de dados eficientes. Os dados podem ser facilmente acessados, gerenciados, modificados, atualizados, controlados e organizados. A maioria dos bancos de dados usa a linguagem de consulta estruturada (SQL) para escrever e consultar dados.
 
-## SGBD PostgreSQL
+**SGBD PostgreSQL**
 O PostgreSQL é um sistema de gerenciamento de banco de dados objeto-relacional (SGBDOR) [1] baseado no POSTGRES Versão 4.2 desenvolvido pelo Departamento de Ciência da Computação da Universidade da Califórnia em Berkeley. O POSTGRES foi pioneiro em vários conceitos que somente se tornaram disponíveis muito mais tarde em alguns sistemas de banco de dados comerciais.
 O PostgreSQL é um descendente de código fonte aberto deste código original de Berkeley, que suporta grande parte do padrão SQL e oferece muitas funcionalidades modernas, como:
-comandos complexos
-chaves estrangeiras
-gatilhos
-visões
-integridade transacional
-controle de simultaneidade multiversão
+* comandos complexos
+* chaves estrangeiras
+* gatilhos
+* visões
+* integridade transacional
+* controle de simultaneidade multiversão
 Além disso, o PostgreSQL pode ser ampliado pelo usuário de muitas maneiras como, por exemplo, adicionando novos
-tipos de dado
-funções
-operadores
-funções de agregação
-métodos de índice
-linguagens procedurais
+* tipos de dado
+* funções
+* operadores
+* funções de agregação
+* métodos de índice
+* linguagens procedurais
 Devido à sua licença liberal, o PostgreSQL pode ser utilizado, modificado e distribuído por qualquer pessoa para qualquer finalidade, seja particular, comercial ou acadêmica, livre de encargos.
-[1]
-Um banco de dados objeto-relacional (ORD), ou sistema de gerenciamento de banco de dados objeto-relacional (ORDBMS ou SGBDOR) é um sistema de gerenciamento de banco de dados relacional que permite aos desenvolvedores integrar ao banco de dados seus próprios tipos de dado e métodos personalizados. Muitas idéias dos primeiros esforços para bancos de dados objeto-relacionais foram amplamente adicionadas ao SQL:1999. Na verdade, todo produto que adere aos aspectos orientados a objeto do SQL:1999 pode ser descrito como um produto de gerenciamento de banco de dados objeto-relacional. Por exemplo, o DB2 da IBM, o Oracle e o SQL Server da Microsoft declaram suportar esta tecnologia com graus variados de sucesso. — Object-relational database
+
+> [1]
+> Um banco de dados objeto-relacional (ORD), ou sistema de gerenciamento de banco de dados objeto-relacional (ORDBMS ou SGBDOR) é um sistema de gerenciamento de banco de dados relacional que permite aos desenvolvedores integrar ao banco de dados seus próprios tipos de dado e métodos personalizados. Muitas idéias dos primeiros esforços para bancos de dados objeto-relacionais foram amplamente adicionadas ao SQL:1999. Na verdade, todo produto que adere aos aspectos orientados a objeto do SQL:1999 pode ser descrito como um produto de gerenciamento de banco de dados objeto-relacional. Por exemplo, o DB2 da IBM, o Oracle e o SQL Server da Microsoft declaram suportar esta tecnologia com graus variados de sucesso. — Object-relational database
 
 ## Conclusão
 Tendo em vista as explicações acima isto é um pequeno apurado do que utilizaremos, tendo visto o Vue JS como framework para criar a casca no padrão MVVM que iremos utilizar no sistema, e também faremos o uso de uma API Rest utilizando o JSON, o Express JS, e o Node JS para construir e consumir com o nosso esqueleto do vue e inserir os dados no Banco de Dados, construído e padronizado através do SGBD PostgreSQL.
