@@ -1,30 +1,37 @@
-<align-center>Documento Arquitetural</align-center>
+<p align="center"> Documento Arquitetural <p>
 
 ## Introdução a Arquitetura MVVM
 
 O padrão de projeto Model-View-ViewModel (MVVM) foi originalmente criado para aplicativos Windows Presentation Foundation (WPF) usando XAML para separar a interface do usuário (UI) da lógica de negócios e aproveitando ao máximo o data binding (a vinculação de dados).
 Aplicações arquitetadas desta forma têm uma camada ViewModel distinta que não possui dependências de sua interface de usuário. Esta arquitetura em si é otimizada para testes de unidade, bem como para o desenvolvimento multiplataforma. Como as classes ViewModel de um aplicativo não têm dependências sobre a camada de interface do usuário, você pode facilmente trocar uma interface de usuário iOS por uma interface Android e escrever testes contra a camada ViewModel. O padrão MVVM é composto basicamente dos seguintes elementos:
+
 **Model:** A camada de modelo é a lógica de negócios que impulsiona a aplicação e quaisquer objetos de negócios;
+
 **View:** Esta camada é a interface do usuário. No caso do desenvolvimento cross platform, ela inclui qualquer código específico da plataforma para conduzir a interface do usuário da aplicação.
+
 **ViewModel:** Esta camada age como a cola em aplicações MVVM. As camadas ViewModel coordenam as operações entre a view e as camadas model. Uma camada ViewModel irá conter propriedades que a View vai obter ou definir, e funções para cada operação que pode ser feita pelo usuário em cada view. A camada ViewModel também evocará operações sobre a camada Model, se necessário. É importante notar que a interação entre as camadas View e ViewModel é  tradicionalmente criada pela ligação de dados ou databinding. No entanto, o iOS e o Android não possuem um mecanismos de vinculação de dados embutidos, por isso a abordagem geral neste caso é feita manualmente chamando a camada ViewModel da camada View.
+
 **Nota:** Você pode usar o Xamarin. Forms para criar aplicações nativas para iOS e Android e aproveitar o mecanismo de databinding embutido do Xamarin Forms. A seguir vou mostrar um exemplo de implementação do padrão MVVM bem simples para mostrar a sua atuação.
 
 ## Arquitetura do Vue JS
-
 Aplicações que utilizam Vue são constituídas de componentes criados com a sintaxe HTML, CSS e Javascript em um único arquivo .vue, que facilitam o isolamento e a manutenção de funcionalidades. Cada componente constitui um escopo isolado dos demais, tanto em lógica quantos nos estilos. A renderização dos dados é feita baseada em uma virtual DOM que é atualizada apenas quando os dados de um componentes são alterados, aumentando o desempenho e descartando atualizações desnecessárias. Cada componente é criado usando a sintaxe HTML para estruturação com os dados atrelados via Javascript, o que supre as limitações do HTML como a capacidade de iterar sobre uma coleção de dados ou decidir se uma tag deve ser renderizada ou não.
 
 ## Ferramentas para Vue JS
 Para otimizar o processo de desenvolvimento, Vue também proporciona uma interface CLI onde é possível executar diferentes funções comuns a projetos para front-end. 
 Uma das funções mais conhecidas é o vue create <projeto> que é utilizado para iniciar um novo projeto pré-configurado com ferramentas comuns e indispensáveis, tais como: 
 Babel – transpilador
-* Typescript – tipagem estática
-* Vuex – gerente de estados aplicação
-* Router – gerente de rotas
-* Eslint – formatador de código
-* Jest – testes
+ * Typescript – tipagem estática
+ * Vuex – gerente de estados aplicação
+ * Router – gerente de rotas
+ * Eslint – formatador de código
+ * Jest – testes
+
 Vue-cli também proporciona uma arquitetura de plugins onde é possível acoplar diferentes funcionalidades como análise de métricas, build otimizado e deploy a diferentes provedores.
+
 Vue-devtools é outra ferramenta desenvolvida para facilitar o processo de desenvolvimento de aplicações que utilizam Vue JS, funciona como uma extensão do browser e serve para visualizar o estado de cada componente que está sendo renderizado. Esta função dá ao desenvolvedor a capacidade de debugar a aplicação de maneira rápida e visual.
+
 Os editores de texto mais utilizados também proporcionam ferramentas para que a experiência de desenvolvimento com Vue seja a melhor possível, provendo syntax highlighting, snippets  e intelliSense. 
+
 A extensão mais utilizada para essa funcionalidade é chamada Vetur que é utilizada juntamente com o VSCode que por opção foi o escolhido para o desenvolvimento do projeto, e para o atom tem o ide-vue.
 
 ## API Rest
