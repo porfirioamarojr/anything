@@ -1,5 +1,5 @@
-# Documento Arquitetural
-:------------:
+<center>Documento Arquitetural</center>
+
 ## Introdução a Arquitetura MVVM
 
 O padrão de projeto Model-View-ViewModel (MVVM) foi originalmente criado para aplicativos Windows Presentation Foundation (WPF) usando XAML para separar a interface do usuário (UI) da lógica de negócios e aproveitando ao máximo o data binding (a vinculação de dados).
