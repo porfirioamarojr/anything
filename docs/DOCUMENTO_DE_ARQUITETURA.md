@@ -2,7 +2,7 @@
 
 ## Introdução a Arquitetura MVVM
 
-<p>O padrão de projeto Model-View-ViewModel (MVVM) foi originalmente criado para aplicativos Windows Presentation Foundation (WPF) usando XAML para separar a interface do usuário (UI) da lógica de negócios e aproveitando ao máximo o data binding (a vinculação de dados).</p>
+<p margin: 0, text-indent: 3ch>O padrão de projeto Model-View-ViewModel (MVVM) foi originalmente criado para aplicativos Windows Presentation Foundation (WPF) usando XAML para separar a interface do usuário (UI) da lógica de negócios e aproveitando ao máximo o data binding (a vinculação de dados).</p>
 <p>Aplicações arquitetadas desta forma têm uma camada ViewModel distinta que não possui dependências de sua interface de usuário. Esta arquitetura em si é otimizada para testes de unidade, bem como para o desenvolvimento multiplataforma. Como as classes ViewModel de um aplicativo não têm dependências sobre a camada de interface do usuário, você pode facilmente trocar uma interface de usuário iOS por uma interface Android e escrever testes contra a camada ViewModel. O padrão MVVM é composto basicamente dos seguintes elementos:</p>
 
 <p> **Model:** A camada de modelo é a lógica de negócios que impulsiona a aplicação e quaisquer objetos de negócios;</p>
@@ -107,10 +107,3 @@ Devido à sua licença liberal, o PostgreSQL pode ser utilizado, modificado e di
 
 ## Conclusão
 Tendo em vista as explicações acima isto é um pequeno apurado do que utilizaremos, tendo visto o Vue JS como framework para criar a casca no padrão MVVM que iremos utilizar no sistema, e também faremos o uso de uma API Rest utilizando o JSON, o Express JS, e o Node JS para construir e consumir com o nosso esqueleto do vue e inserir os dados no Banco de Dados, construído e padronizado através do SGBD PostgreSQL.
-
-<style>
-p {
-    margin: 0;
-    text-indent: 3ch;
-}
-</style>
