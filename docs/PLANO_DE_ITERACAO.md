@@ -8,7 +8,7 @@
  -------- | ----------- | ---------- | ------------ | ------- | --------
  It1      | 17/09/2020  | 30/09/2020 | 01/09/2020   | Amaro | Criar Documento de Visão, Modelos e Plano de Iteração e Release
  It2      | 02/09/2020  | 07/10/2020 | 08/10/2020   | José Erildo | Implementar, Criar US00, Detalhar US01, US02
- It3      | 11/10/2020  | 24/10/2020 | 23/10/2020   | Gerente 3 | Implementar US01, US02, Detalhar US03 US04, Testar US00
+ It3      | 11/10/2020  | 24/10/2020 | 23/10/2020   | Marcelo Raí | Implementar US01, US02, Detalhar US03 US04, Testar US00
  It4      | 25/10/2020  | 07/11/2020 | 06/11/2020   | Gerente 4
  It5      | 08/11/2020  | 21/11/2020 | 20/11/2020   | Gerente 5
  It6      | 22/11/2020  | 05/12/2020 | 04/12/2020   | Gerente 6

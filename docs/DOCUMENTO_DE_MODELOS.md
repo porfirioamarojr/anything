@@ -1,20 +1,22 @@
 # Documento de Modelos
 
 ## Entidades  
-* Produto - apresenta dados referentes ao produto: nome, descrição e valor;
-* Carrinho - contém valor subtotal de todos os itens passados ao carrinho;
-* Pagamento - contém o valor total da compra, se houve cupom de desconto e método de pagamento;
-* Cartão - contém informações relevantes ao cartão de crédito do Cliente;
-* Conta - contém informações pessoais em comum de dos usuários Cliente e Admnistrador;
-* Endereço - Informações de localizadade da Coonta dos usuários;
-* Cliente - usuário que compra;
-* Admnistrador = usuário com maiores prioridades;
+* Produto - Apresenta dados referentes ao produto: nome, descrição e valor;
+* Carrinho - Contém valor subtotal de todos os itens passados ao carrinho;
+* Pagamento - Contém o valor total da compra, se houve cupom de desconto e método de pagamento;
+* Cartão - Contém informações relevantes ao cartão de crédito do Cliente;
+* Conta - Contém informações pessoais em comum de dos usuários Cliente e Administrador;
+* Endereço - Informações de localidade da conta dos usuários;
+* Cliente - Usuário que compra;
+* Administrador - Usuário com maiores prioridades;
+* Vendedor - Usuário que tem prioridade de cadastrar produtos;
+* Loja - Pertence ao usuário vendedor, que tem os produtos que foram cadastrados.
 
 ## Modelo Conceitual
 
 Segue em anexo a representação gráfica do modelo gerado a partir do yUML:
 
-![Modelo UML](diagramas/IMG_MOD_CONCEITUAL.png)
+![Modelo UML](diagramas/IMG_MODELO_CONCEITUAL.png)
 
 O código referente ao diagrama:
 
@@ -28,7 +30,7 @@ Para mais informações sobre a utilização do yUML acesse o link:
 
 Representação de Modelo gerado pelo Draw.io:
 
-![diagrama](diagramas/MODELO_DADOS.png)  
+![diagrama](diagramas/MODELO_DADOS.jpg)  
 
 Conteúdo de Leitura
   
@@ -123,4 +125,22 @@ Um dicionário de dados é uma coleção de metadados que contêm definições e
  data | - | Data | Não pode ser nulo. | Apenas números
  nome_cartao | - | Numérico | Não pode ser nulo. | Apenas números
  cpf | - | Numérico |Não pode ser nulo. | Apenas números
-  
+ 
+ 
+ ### Entidade: Vendedor
+
+ 
+ Atributo | Tipo de chave | Tipo de dado | Restrição |Observação
+ -------- | ------------- | ------------ | --------- | ----------
+ cpf | - | Numérico |Não pode ser nulo. | Apenas números
+ cnpj | - | Numérico |Não pode ser nulo. | Apenas números
+ 
+ 
+ ### Entidade: Loja
+
+ 
+ Atributo | Tipo de chave | Tipo de dado | Restrição |Observação
+ -------- | ------------- | ------------ | --------- | ----------
+ cnpj | - | Numérico |Não pode ser nulo. | Apenas números
+ nome_loja | - | Texto | Não pode ser nulo. | -
+ descricao | - | Texto | Não pode ser nulo. | -

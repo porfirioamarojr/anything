@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-    <h1>Clientes</h1>
-    <input type="text" v-model="clienteAmaro.nome">
-    <input type="text" v-model="clienteAmaro.email">
-    <Cliente :cliente="clienteAmaro"/>
-    <CadastroCliente/>
 
-    <Produto/>
-    <Produto/>
-    <Produto/>
-        
   </div>
 </template>
 
 <script>
+
+import formulario from "./components/formulario.vue"
+
+export default {
+  name: 'App',
+  components: {
+    formulario
 import Cliente from './components/Cliente'
 import Produto from './components/Produto'
 
@@ -35,7 +33,9 @@ export default {
   components:{
     Cliente,
     Produto
+
   }
+  
 }
 </script>
 
@@ -47,5 +47,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #F29F05;
+  
+}
+
+template{
 }
 </style>
