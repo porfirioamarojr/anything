@@ -1,11 +1,11 @@
-<p align="center"> Documento Arquitetural <p>
+<h1><p align="center"> Documento Arquitetural<p></h1>
 
 ## Introdução a Arquitetura MVVM
 
-O padrão de projeto Model-View-ViewModel (MVVM) foi originalmente criado para aplicativos Windows Presentation Foundation (WPF) usando XAML para separar a interface do usuário (UI) da lógica de negócios e aproveitando ao máximo o data binding (a vinculação de dados).
-Aplicações arquitetadas desta forma têm uma camada ViewModel distinta que não possui dependências de sua interface de usuário. Esta arquitetura em si é otimizada para testes de unidade, bem como para o desenvolvimento multiplataforma. Como as classes ViewModel de um aplicativo não têm dependências sobre a camada de interface do usuário, você pode facilmente trocar uma interface de usuário iOS por uma interface Android e escrever testes contra a camada ViewModel. O padrão MVVM é composto basicamente dos seguintes elementos:
+<p>O padrão de projeto Model-View-ViewModel (MVVM) foi originalmente criado para aplicativos Windows Presentation Foundation (WPF) usando XAML para separar a interface do usuário (UI) da lógica de negócios e aproveitando ao máximo o data binding (a vinculação de dados).</p>
+<p>Aplicações arquitetadas desta forma têm uma camada ViewModel distinta que não possui dependências de sua interface de usuário. Esta arquitetura em si é otimizada para testes de unidade, bem como para o desenvolvimento multiplataforma. Como as classes ViewModel de um aplicativo não têm dependências sobre a camada de interface do usuário, você pode facilmente trocar uma interface de usuário iOS por uma interface Android e escrever testes contra a camada ViewModel. O padrão MVVM é composto basicamente dos seguintes elementos:</p>
 
-**Model:** A camada de modelo é a lógica de negócios que impulsiona a aplicação e quaisquer objetos de negócios;
+<p> **Model:** A camada de modelo é a lógica de negócios que impulsiona a aplicação e quaisquer objetos de negócios;</p>
 
 **View:** Esta camada é a interface do usuário. No caso do desenvolvimento cross platform, ela inclui qualquer código específico da plataforma para conduzir a interface do usuário da aplicação.
 
@@ -14,31 +14,32 @@ Aplicações arquitetadas desta forma têm uma camada ViewModel distinta que nã
 **Nota:** Você pode usar o Xamarin. Forms para criar aplicações nativas para iOS e Android e aproveitar o mecanismo de databinding embutido do Xamarin Forms. A seguir vou mostrar um exemplo de implementação do padrão MVVM bem simples para mostrar a sua atuação.
 
 ## Arquitetura do Vue JS
-Aplicações que utilizam Vue são constituídas de componentes criados com a sintaxe HTML, CSS e Javascript em um único arquivo .vue, que facilitam o isolamento e a manutenção de funcionalidades. Cada componente constitui um escopo isolado dos demais, tanto em lógica quantos nos estilos. A renderização dos dados é feita baseada em uma virtual DOM que é atualizada apenas quando os dados de um componentes são alterados, aumentando o desempenho e descartando atualizações desnecessárias. Cada componente é criado usando a sintaxe HTML para estruturação com os dados atrelados via Javascript, o que supre as limitações do HTML como a capacidade de iterar sobre uma coleção de dados ou decidir se uma tag deve ser renderizada ou não.
+<p>Aplicações que utilizam Vue são constituídas de componentes criados com a sintaxe HTML, CSS e Javascript em um único arquivo .vue, que facilitam o isolamento e a manutenção de funcionalidades. Cada componente constitui um escopo isolado dos demais, tanto em lógica quantos nos estilos. A renderização dos dados é feita baseada em uma virtual DOM que é atualizada apenas quando os dados de um componentes são alterados, aumentando o desempenho e descartando atualizações desnecessárias. Cada componente é criado usando a sintaxe HTML para estruturação com os dados atrelados via Javascript, o que supre as limitações do HTML como a capacidade de iterar sobre uma coleção de dados ou decidir se uma tag deve ser renderizada ou não.</p>
 
 ## Ferramentas para Vue JS
-Para otimizar o processo de desenvolvimento, Vue também proporciona uma interface CLI onde é possível executar diferentes funções comuns a projetos para front-end. 
-Uma das funções mais conhecidas é o vue create <projeto> que é utilizado para iniciar um novo projeto pré-configurado com ferramentas comuns e indispensáveis, tais como: 
-Babel – transpilador
+<p>Para otimizar o processo de desenvolvimento, Vue também proporciona uma interface CLI onde é possível executar diferentes funções comuns a projetos para front-end. 
+Uma das funções mais conhecidas é o vue create <projeto> que é utilizado para iniciar um novo projeto pré-configurado com ferramentas comuns e indispensáveis, tais como:</p> 
+ 
+ * Babel – transpilador
  * Typescript – tipagem estática
  * Vuex – gerente de estados aplicação
  * Router – gerente de rotas
  * Eslint – formatador de código
  * Jest – testes
 
-Vue-cli também proporciona uma arquitetura de plugins onde é possível acoplar diferentes funcionalidades como análise de métricas, build otimizado e deploy a diferentes provedores.
+<p>Vue-cli também proporciona uma arquitetura de plugins onde é possível acoplar diferentes funcionalidades como análise de métricas, build otimizado e deploy a diferentes provedores.</p>
 
-Vue-devtools é outra ferramenta desenvolvida para facilitar o processo de desenvolvimento de aplicações que utilizam Vue JS, funciona como uma extensão do browser e serve para visualizar o estado de cada componente que está sendo renderizado. Esta função dá ao desenvolvedor a capacidade de debugar a aplicação de maneira rápida e visual.
+<p>Vue-devtools é outra ferramenta desenvolvida para facilitar o processo de desenvolvimento de aplicações que utilizam Vue JS, funciona como uma extensão do browser e serve para visualizar o estado de cada componente que está sendo renderizado. Esta função dá ao desenvolvedor a capacidade de debugar a aplicação de maneira rápida e visual.</p>
 
-Os editores de texto mais utilizados também proporcionam ferramentas para que a experiência de desenvolvimento com Vue seja a melhor possível, provendo syntax highlighting, snippets  e intelliSense. 
+<p>Os editores de texto mais utilizados também proporcionam ferramentas para que a experiência de desenvolvimento com Vue seja a melhor possível, provendo syntax highlighting, snippets  e intelliSense.</p> 
 
-A extensão mais utilizada para essa funcionalidade é chamada Vetur que é utilizada juntamente com o VSCode que por opção foi o escolhido para o desenvolvimento do projeto, e para o atom tem o ide-vue.
+<p>A extensão mais utilizada para essa funcionalidade é chamada Vetur que é utilizada juntamente com o VSCode que por opção foi o escolhido para o desenvolvimento do projeto, e para o atom tem o ide-vue.</p>
 
 ## API Rest
-Podemos pensar em APIs como uma ponte que liga duas ilhas, mas no caso de software, uma API pode ser usada por diversas áreas de negócio, não sendo necessário ao consumidor conhecer detalhes sobre sua implementação. Elas são interfaces de integração que facilitam a troca de informações entre n aplicações, nos permitindo ter até mesmo várias caras para uma única aplicação – uma versão móvel, outra desktop e uma web.
+<p>Podemos pensar em APIs como uma ponte que liga duas ilhas, mas no caso de software, uma API pode ser usada por diversas áreas de negócio, não sendo necessário ao consumidor conhecer detalhes sobre sua implementação. Elas são interfaces de integração que facilitam a troca de informações entre n aplicações, nos permitindo ter até mesmo várias caras para uma única aplicação – uma versão móvel, outra desktop e uma web.</p>
 
 ## O que é REST?
-A sigla REST, em português, significa “Transferência de Estado Representacional”. Concebido como uma abstração da arquitetura da web, trata-se de um conjunto de princípios e definições necessários para a criação de um projeto com interfaces bem definidas. A utilização da arquitetura REST, portanto, permite a comunicação entre aplicações. Ao abrir o navegador, ele estabelece uma conexão TCP/IP com o servidor de destino e envia uma requisição GET HTTP, com o endereço buscado. O servidor, então, interpreta a requisição, retornando com uma resposta HTTP ao navegador. Essa resposta pode ser completa, com representações em formato HTML, ou apresentar erro, afirmando que o recurso solicitado não foi encontrado. Esse processo é repetido diversas vezes em um período de navegação. Cada nova URL aberta ou formulário submetido refaz as etapas que descrevemos. Dessa forma, esses elementos permitem a criação de aplicações web, desenhando a forma como navegamos na internet. Os Web Services que adotam REST são mais leves e perfeitos na busca da metodologia ágil. Outro diferencial é a flexibilidade, sendo possível escolher o formato que melhor se encaixa para as mensagens do sistema. Os mais utilizados, além do texto puro, são JSON e XML, dependendo da necessidade de cada momento.
+<p>A sigla REST, em português, significa “Transferência de Estado Representacional”. Concebido como uma abstração da arquitetura da web, trata-se de um conjunto de princípios e definições necessários para a criação de um projeto com interfaces bem definidas. A utilização da arquitetura REST, portanto, permite a comunicação entre aplicações. Ao abrir o navegador, ele estabelece uma conexão TCP/IP com o servidor de destino e envia uma requisição GET HTTP, com o endereço buscado. O servidor, então, interpreta a requisição, retornando com uma resposta HTTP ao navegador. Essa resposta pode ser completa, com representações em formato HTML, ou apresentar erro, afirmando que o recurso solicitado não foi encontrado. Esse processo é repetido diversas vezes em um período de navegação. Cada nova URL aberta ou formulário submetido refaz as etapas que descrevemos. Dessa forma, esses elementos permitem a criação de aplicações web, desenhando a forma como navegamos na internet. Os Web Services que adotam REST são mais leves e perfeitos na busca da metodologia ágil. Outro diferencial é a flexibilidade, sendo possível escolher o formato que melhor se encaixa para as mensagens do sistema. Os mais utilizados, além do texto puro, são JSON e XML, dependendo da necessidade de cada momento.</p>
 
 ## Sobre o JSON
 JSON (JavaScript Object Notation - Notação de Objetos JavaScript) é uma formatação leve de troca de dados. Para seres humanos, é fácil de ler e escrever. Para máquinas, é fácil de interpretar e gerar. Está baseado em um subconjunto da linguagem de programação JavaScript, Standard ECMA-262 3a Edição -Dezembro - 1999. JSON é em formato texto e completamente independente de linguagem, pois usa convenções que são familiares às linguagens C e familiares, incluindo C++, C#, Java, JavaScript, Perl, Python e muitas outras. Estas propriedades fazem com que JSON seja um formato ideal de troca de dados.
@@ -48,7 +49,7 @@ Uma lista ordenada de valores. Na maioria das linguagens, isto é caracterizado 
 Estas são estruturas de dados universais. Virtualmente todas as linguagens de programação modernas as suportam, de uma forma ou de outra. É aceitável que um formato de troca de dados que seja independente de linguagem de programação se baseie em estruturas.
 
 ## Sobre o Node JS
-Como um ambiente de execução JavaScript assíncrono orientado a eventos, o Node.js é projetado para desenvolvimento de aplicações escaláveis de rede. No exemplo a seguir, diversas conexões podem ser controladas ao mesmo tempo. Em cada conexão a função de callback é chamada. Mas, se não houver trabalho a ser realizado, o Node.js ficará inativo. Essa é uma alternativa que contrasta com o modelo de concorrência mais comum, onde são utilizadas threads do SO. Aplicações de rede baseadas em threads são relativamente ineficientes e difíceis de usar. Além disso, os usuários do Node.js não precisam se preocupar com deadlock de processos, pois não existem locks. Quase nenhuma função no Node.js realiza diretamente operações de E/S, por essa razão o processo nunca bloqueia. Por não existirem operações bloqueantes, sistemas escaláveis são razoavelmente fáceis de serem desenvolvidos em Node.js.
+<p>Como um ambiente de execução JavaScript assíncrono orientado a eventos, o Node.js é projetado para desenvolvimento de aplicações escaláveis de rede. No exemplo a seguir, diversas conexões podem ser controladas ao mesmo tempo. Em cada conexão a função de callback é chamada. Mas, se não houver trabalho a ser realizado, o Node.js ficará inativo. Essa é uma alternativa que contrasta com o modelo de concorrência mais comum, onde são utilizadas threads do SO. Aplicações de rede baseadas em threads são relativamente ineficientes e difíceis de usar. Além disso, os usuários do Node.js não precisam se preocupar com deadlock de processos, pois não existem locks. Quase nenhuma função no Node.js realiza diretamente operações de E/S, por essa razão o processo nunca bloqueia. Por não existirem operações bloqueantes, sistemas escaláveis são razoavelmente fáceis de serem desenvolvidos em Node.js.</p>
 
 ## Express JS
 Express é um popular framework web estruturado, escrito em JavaScript que roda sobre o ambiente node.js em tempo de execução. Este módulo explica alguns dos principais benefícios deste framework, como configurar o seu ambiente de desenvolvimento e como executar tarefas comuns de desenvolvimento e implantação da web.
@@ -67,20 +68,20 @@ Uma função que é chamada pela camada de roteamento do Express antes do manipu
  >* var foo = require('middleware') é chamado requerendo ou usando um módulo do Node.js. Então a instrução var mw = foo() tipicamente retorna o middleware.
  >* app.use(mw) é chamado incluindo o middleware na pilha global de processamento.
  >* app.get('/foo', mw, function (req, res) { ... }) é chamado *incluindo o middleware para a pilha de processamento do “GET /foo” *.
-### Node.js
+## Node.js
 Uma plataforma de software que é usada para construir aplicativos de rede escaláveis. O Node.js usa o JavaScript como linguagem de script, e alcança rendimentos altos através de E/S não bloqueante e um loop de eventos de thread única. Consulte nodejs.org. **Nota de uso:** Inicialmente, “Node.js,” posteriormente “Node”.
-**open-source, open source**
+ **open-source, open source**
 Quando usado como adjetivo, colocar o hífen; por exemplo “Este é um software open-source”. Consulte Software Open-source na Wikipedia. Nota: Apesar de ser comum não colocar o hífen neste termo, estamos usando as regras padrões do Inglês para colocar o hífen em adjetivos compostos.
-**resposta**
+ **resposta**
 Uma resposta HTTP. Um servidor retorna uma mensagem de resposta HTTP para o cliente. A resposta contém informações do status de conclusão sobre a solicitação e pode também conter conteúdo da solicitação no corpo da mensagem.
-**rota**
+ **rota**
 Parte de uma URL que identifica um recurso. Por exemplo, em http://foo.com/products/id, “/products/id” é a rota.
-**roteador**
+ **roteador**
 Consulte roteador na referência da API.
-**solicitação**
+ **solicitação**
 Uma solicitação HTTP. Um cliente envia uma mensagem HTTP para um servidor, que retorna uma resposta. A solicitação deve usar um dos vários métodos de solicitação como GET, POST, e assim por diante.
 
-**Banco de Dados**
+## Banco de Dados
 Um banco de dados é uma coleção organizada de informações - ou dados - estruturadas, normalmente armazenadas eletronicamente em um sistema de computador. Um banco de dados é geralmente controlado por um sistema de gerenciamento de banco de dados (DBMS). Juntos, os dados e o DBMS, juntamente com os aplicativos associados a eles, são chamados de sistema de banco de dados, geralmente abreviados para apenas banco de dados. Os dados nos tipos mais comuns de bancos de dados em operação atualmente são modelados em linhas e colunas em uma série de tabelas para tornar o processamento e a consulta de dados eficientes. Os dados podem ser facilmente acessados, gerenciados, modificados, atualizados, controlados e organizados. A maioria dos bancos de dados usa a linguagem de consulta estruturada (SQL) para escrever e consultar dados.
 
 **SGBD PostgreSQL**
