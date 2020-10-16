@@ -27,16 +27,16 @@ Uma das funções mais conhecidas é o vue create <projeto> que é utilizado par
  * Eslint – formatador de código
  * Jest – testes
 
-<p>Vue-cli também proporciona uma arquitetura de plugins onde é possível acoplar diferentes funcionalidades como análise de métricas, build otimizado e deploy a diferentes provedores.</p>
+<p>     Vue-cli também proporciona uma arquitetura de plugins onde é possível acoplar diferentes funcionalidades como análise de métricas, build otimizado e deploy a diferentes provedores.</p>
 
-<p>Vue-devtools é outra ferramenta desenvolvida para facilitar o processo de desenvolvimento de aplicações que utilizam Vue JS, funciona como uma extensão do browser e serve para visualizar o estado de cada componente que está sendo renderizado. Esta função dá ao desenvolvedor a capacidade de debugar a aplicação de maneira rápida e visual.</p>
+<p>     Vue-devtools é outra ferramenta desenvolvida para facilitar o processo de desenvolvimento de aplicações que utilizam Vue JS, funciona como uma extensão do browser e serve para visualizar o estado de cada componente que está sendo renderizado. Esta função dá ao desenvolvedor a capacidade de debugar a aplicação de maneira rápida e visual.</p>
 
-<p>Os editores de texto mais utilizados também proporcionam ferramentas para que a experiência de desenvolvimento com Vue seja a melhor possível, provendo syntax highlighting, snippets  e intelliSense.</p> 
+<p>     Os editores de texto mais utilizados também proporcionam ferramentas para que a experiência de desenvolvimento com Vue seja a melhor possível, provendo syntax highlighting, snippets  e intelliSense.</p> 
 
-<p>A extensão mais utilizada para essa funcionalidade é chamada Vetur que é utilizada juntamente com o VSCode que por opção foi o escolhido para o desenvolvimento do projeto, e para o atom tem o ide-vue.</p>
+<p>     A extensão mais utilizada para essa funcionalidade é chamada Vetur que é utilizada juntamente com o VSCode que por opção foi o escolhido para o desenvolvimento do projeto, e para o atom tem o ide-vue.</p>
 
 ## API Rest
-<p>Podemos pensar em APIs como uma ponte que liga duas ilhas, mas no caso de software, uma API pode ser usada por diversas áreas de negócio, não sendo necessário ao consumidor conhecer detalhes sobre sua implementação. Elas são interfaces de integração que facilitam a troca de informações entre n aplicações, nos permitindo ter até mesmo várias caras para uma única aplicação – uma versão móvel, outra desktop e uma web.</p>
+<p>     Podemos pensar em APIs como uma ponte que liga duas ilhas, mas no caso de software, uma API pode ser usada por diversas áreas de negócio, não sendo necessário ao consumidor conhecer detalhes sobre sua implementação. Elas são interfaces de integração que facilitam a troca de informações entre n aplicações, nos permitindo ter até mesmo várias caras para uma única aplicação – uma versão móvel, outra desktop e uma web.</p>
 
 ## O que é REST?
 <p>A sigla REST, em português, significa “Transferência de Estado Representacional”. Concebido como uma abstração da arquitetura da web, trata-se de um conjunto de princípios e definições necessários para a criação de um projeto com interfaces bem definidas. A utilização da arquitetura REST, portanto, permite a comunicação entre aplicações. Ao abrir o navegador, ele estabelece uma conexão TCP/IP com o servidor de destino e envia uma requisição GET HTTP, com o endereço buscado. O servidor, então, interpreta a requisição, retornando com uma resposta HTTP ao navegador. Essa resposta pode ser completa, com representações em formato HTML, ou apresentar erro, afirmando que o recurso solicitado não foi encontrado. Esse processo é repetido diversas vezes em um período de navegação. Cada nova URL aberta ou formulário submetido refaz as etapas que descrevemos. Dessa forma, esses elementos permitem a criação de aplicações web, desenhando a forma como navegamos na internet. Os Web Services que adotam REST são mais leves e perfeitos na busca da metodologia ágil. Outro diferencial é a flexibilidade, sendo possível escolher o formato que melhor se encaixa para as mensagens do sistema. Os mais utilizados, além do texto puro, são JSON e XML, dependendo da necessidade de cada momento.</p>
@@ -49,7 +49,7 @@ Uma lista ordenada de valores. Na maioria das linguagens, isto é caracterizado 
 Estas são estruturas de dados universais. Virtualmente todas as linguagens de programação modernas as suportam, de uma forma ou de outra. É aceitável que um formato de troca de dados que seja independente de linguagem de programação se baseie em estruturas.
 
 ## Sobre o Node JS
-<p>Como um ambiente de execução JavaScript assíncrono orientado a eventos, o Node.js é projetado para desenvolvimento de aplicações escaláveis de rede. No exemplo a seguir, diversas conexões podem ser controladas ao mesmo tempo. Em cada conexão a função de callback é chamada. Mas, se não houver trabalho a ser realizado, o Node.js ficará inativo. Essa é uma alternativa que contrasta com o modelo de concorrência mais comum, onde são utilizadas threads do SO. Aplicações de rede baseadas em threads são relativamente ineficientes e difíceis de usar. Além disso, os usuários do Node.js não precisam se preocupar com deadlock de processos, pois não existem locks. Quase nenhuma função no Node.js realiza diretamente operações de E/S, por essa razão o processo nunca bloqueia. Por não existirem operações bloqueantes, sistemas escaláveis são razoavelmente fáceis de serem desenvolvidos em Node.js.</p>
+<p>     Como um ambiente de execução JavaScript assíncrono orientado a eventos, o Node.js é projetado para desenvolvimento de aplicações escaláveis de rede. No exemplo a seguir, diversas conexões podem ser controladas ao mesmo tempo. Em cada conexão a função de callback é chamada. Mas, se não houver trabalho a ser realizado, o Node.js ficará inativo. Essa é uma alternativa que contrasta com o modelo de concorrência mais comum, onde são utilizadas threads do SO. Aplicações de rede baseadas em threads são relativamente ineficientes e difíceis de usar. Além disso, os usuários do Node.js não precisam se preocupar com deadlock de processos, pois não existem locks. Quase nenhuma função no Node.js realiza diretamente operações de E/S, por essa razão o processo nunca bloqueia. Por não existirem operações bloqueantes, sistemas escaláveis são razoavelmente fáceis de serem desenvolvidos em Node.js.</p>
 
 ## Express JS
 Express é um popular framework web estruturado, escrito em JavaScript que roda sobre o ambiente node.js em tempo de execução. Este módulo explica alguns dos principais benefícios deste framework, como configurar o seu ambiente de desenvolvimento e como executar tarefas comuns de desenvolvimento e implantação da web.
@@ -108,3 +108,5 @@ Devido à sua licença liberal, o PostgreSQL pode ser utilizado, modificado e di
 ## Conclusão
 Tendo em vista as explicações acima isto é um pequeno apurado do que utilizaremos, tendo visto o Vue JS como framework para criar a casca no padrão MVVM que iremos utilizar no sistema, e também faremos o uso de uma API Rest utilizando o JSON, o Express JS, e o Node JS para construir e consumir com o nosso esqueleto do vue e inserir os dados no Banco de Dados, construído e padronizado através do SGBD PostgreSQL.
 
+<div>
+</div>
