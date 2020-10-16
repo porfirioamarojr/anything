@@ -115,15 +115,40 @@ Devido à sua licença liberal, o PostgreSQL pode ser utilizado, modificado e di
 > Um banco de dados objeto-relacional (ORD), ou sistema de gerenciamento de banco de dados objeto-relacional (ORDBMS ou SGBDOR) é um sistema de gerenciamento de banco de dados relacional que permite aos desenvolvedores integrar ao banco de dados seus próprios tipos de dado e métodos personalizados. Muitas idéias dos primeiros esforços para bancos de dados objeto-relacionais foram amplamente adicionadas ao SQL:1999. Na verdade, todo produto que adere aos aspectos orientados a objeto do SQL:1999 pode ser descrito como um produto de gerenciamento de banco de dados objeto-relacional. Por exemplo, o DB2 da IBM, o Oracle e o SQL Server da Microsoft declaram suportar esta tecnologia com graus variados de sucesso. — Object-relational database
 
 ## Conclusão
-Tendo em vista as explicações acima isto é um pequeno apurado do que utilizaremos, tendo visto o Vue JS como framework para criar a casca no padrão MVVM que iremos utilizar no sistema, e também faremos o uso de uma API Rest utilizando o JSON, o Express JS, e o Node JS para construir e consumir com o nosso esqueleto do vue e inserir os dados no Banco de Dados, construído e padronizado através do SGBD PostgreSQL.
+Tendo em vista as explicações acima isto é um pequeno apurado do que utilizaremos, tendo visto o Vue JS como framework para criar a casca no padrão MVVM que iremos utilizar no sistema, e também faremos o uso de uma API Rest utilizando o JSON, o Express JS, e o Node JS para construir e consumir com o nosso     esqueleto do vue e inserir os dados no Banco de Dados, construído e padronizado através do SGBD PostgreSQL.
 
-Imagens de Modelos
+## Imagens de Modelos
 
 Modelo Generalista
 ![modelo](img/CRM_DIAGRAM.png)
+Fonte: [https://blog.pmweb.com.br/como-renovamos-a-arquitetura-do-nosso-crm-com-node-e-vue/](https://blog.pmweb.com.br/como-renovamos-a-arquitetura-do-nosso-crm-com-node-e-vue/)
 
 Modelo do Vue/MVVM
 ![mvvm](img/MVVM.png)
+Fonte: [https://012.vuejs.org/guide/](https://012.vuejs.org/guide/)
 
 Ciclo de Vida de um componente no Vue
 ![lifecyce](img/LIFECYCLE.png)
+Fonte: [https://br.vuejs.org/v2/guide/instance.html#Ciclo-de-Vida-da-Instancia](https://br.vuejs.org/v2/guide/instance.html#Ciclo-de-Vida-da-Instancia)
+
+## Referências:
+
+<[http://www.macoratti.net/16/09/net_mvvm1.htm](http://www.macoratti.net/16/09/net_mvvm1.htm)>. Acesso em: 13 de outubro de 2020.
+
+<[https://blog.geekhunter.com.br/vue-js-so-vejo-vantagens-e-voce/](https://blog.geekhunter.com.br/vue-js-so-vejo-vantagens-e-voce/)>. Acesso em: 13 de outubro de 2020.
+
+<[https://imasters.com.br/back-end/rest-api-com-node-js-back-end-e-front-end](https://imasters.com.br/back-end/rest-api-com-node-js-back-end-e-front-end)>.  Acesso em: 13 de outubro de 2020.
+
+<[https://www.totvs.com/blog/developers/rest/](https://www.totvs.com/blog/developers/rest/)>. Acesso em: 14 de outubro de 2020.
+
+<[https://www.json.org/json-pt.html](https://www.json.org/json-pt.html)>. Acesso em: 14 de outubro de 2020.
+
+<[http://pgdocptbr.sourceforge.net/pg82/intro-whatis.html](http://pgdocptbr.sourceforge.net/pg82/intro-whatis.html)>. Acesso em: 14 de outubro de 2020.
+
+<[https://www.oracle.com/br/database/what-is-database.html](https://www.oracle.com/br/database/what-is-database.html)>. Acesso em: 15 de outubro de 2020.
+
+<[https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs)>. Acesso em: 15 de outubro de 2020.
+
+<[https://expressjs.com/pt-br/resources/glossary.html](https://expressjs.com/pt-br/resources/glossary.html)>. Acesso em: 15 de outubro de 2020.
+
+<[https://nodejs.org/pt-br/about/](https://nodejs.org/pt-br/about/)>. Acesso em: 15 de outubro de 2020.
