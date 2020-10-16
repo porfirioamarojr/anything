@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <formulario/>
+    <h1>dddd</h1>
   </div>
 </template>
 
@@ -24,5 +25,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #F29F05;
+  
+}
+
+template{
 }
 </style>
