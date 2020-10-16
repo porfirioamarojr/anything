@@ -7,8 +7,9 @@ Projeto da Disciplina de Engenharia de Software - Modelo de E-Commerce voltado p
 1. [Documento de Modelos](https://github.com/AmaroJunior98/anything/blob/master/docs/DOCUMENTO_DE_MODELOS.md)
 2. [Documento de Visão](https://github.com/AmaroJunior98/anything/blob/master/docs/DOCUMENTO_DE_VISAO.md)
 3. [Documento de User Stories](https://github.com/AmaroJunior98/anything/blob/master/docs/DOCUMENTO_USER_STORIES.md)
-4. [Plano de formatação](https://github.com/AmaroJunior98/anything/blob/master/docs/PLANO_DE_FORMATACAO.md)
-5. [Plano de iteração](https://github.com/AmaroJunior98/anything/blob/master/docs/PLANO_DE_ITERACAO.md)
+4. [Documento Arquitetural](https://github.com/AmaroJunior98/anything/blob/master/docs/DOCUMENTO_USER_STORIES.md)
+5. [Plano de formatação](https://github.com/AmaroJunior98/anything/blob/master/docs/DOCUMENTO_ARQUITETURAL.md)
+6. [Plano de iteração](https://github.com/AmaroJunior98/anything/blob/master/docs/PLANO_DE_ITERACAO.md)
 
 ## Tecnologias
 No projeto teremos o suporte das seguintes tecnologias:
@@ -24,6 +25,10 @@ No projeto teremos o suporte das seguintes tecnologias:
 [Node.js](https://nodejs.org/en/docs/)
 
 [Vue.js](https://br.vuejs.org/v2/guide/index.html)
+
+[Express.js](https://expressjs.com/pt-br/)
+
+[JSON](https://www.json.org/json-en.html)
 
 [PostgreSQL](https://www.postgresql.org/docs/)
 
