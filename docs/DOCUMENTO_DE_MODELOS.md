@@ -54,7 +54,7 @@ Um dicionário de dados é uma coleção de metadados que contêm definições e
 
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
  -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
- cpf      | primary key   | Numérico    | Não pode ser nulo. | Apenas números | - | Conta | Tabela para registro de administrador(es)
+ cpf      | primary key   | Numérico    | Não pode ser nulo. | Apenas números | Conta | Tabela para registro de administrador(es)
 
 
 ### Entidade: Conta
@@ -132,7 +132,7 @@ Um dicionário de dados é uma coleção de metadados que contêm definições e
  
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
  -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
- cpf | - | Numérico | Não pode ser nulo. | Apenas números | - | Conta e loja | Tabela para registro de vendedores
+ cpf | - | Numérico | Não pode ser nulo. | Apenas números | Conta e loja | Tabela para registro de vendedores
  cnpj | - | Numérico | Não pode ser nulo. | Apenas números |
  
  
@@ -141,6 +141,6 @@ Um dicionário de dados é uma coleção de metadados que contêm definições e
  
  Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
  -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
- cnpj | - | Numérico | Não pode ser nulo. | Apenas números | - | Produto e Vendedor | Tabela para registro de lojas no sistema
+ cnpj | - | Numérico | Não pode ser nulo. | Apenas números | Produto e Vendedor | Tabela para registro de lojas no sistema
  nome_loja | - | Texto | Não pode ser nulo. | - |
  descricao | - | Texto | Não pode ser nulo. | - |
