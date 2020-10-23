@@ -1,8 +1,7 @@
 <template id="template">
   <div id="app">
-    <Cadastro/>
+    <Cliente/>
     <br>
-    <CadastroEndereco/>
     <br>
     <br>
     
@@ -13,12 +12,12 @@
 
 /*
 import Formulario from "./components/Formulario"
-import Cliente from './components/Cliente'
 import Produto from './components/Produto'
-*/
 import Cadastro from './components/Cadastro'
 import CadastroEndereco from './components/CadastroEndereco'
 
+*/
+import Cliente from './components/Cliente'
 /*export default {
   name: 'App',
   components: {
@@ -28,7 +27,7 @@ export default {
   name: 'App',
   data(){
     return {
-      nomeAamaro: "Amaro Júnior",
+      nomeAmaro: "Amaro Júnior",
       clienteAmaro: {
         nome: "Amaro",
         numero: 83999986464,
@@ -40,11 +39,11 @@ export default {
     }
   },
   components:{
-    //Cliente,
+    Cliente,
     //Produto,
     //Formulario,
-    Cadastro,
-    CadastroEndereco
+    //Cadastro,
+    //CadastroEndereco
 
 
   }

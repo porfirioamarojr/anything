@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<template>
+<div>
 <head>
 <title>Title of the document</title>
 <link href="style.css" rel="stylesheet">
@@ -30,5 +30,15 @@
     </div>
     
 </body>
+</div>
+</template>
 
-</html>
+<script>
+export default {
+    
+}
+</script>
+
+<style scoped>
+
+</style>

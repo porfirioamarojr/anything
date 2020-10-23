@@ -60,5 +60,81 @@ export default {
 </script>
 
 <style scoped>
+    a{
+    color:#F29F05;
+}
 
+img#logo{
+    position: absolute;
+    width:650px;
+    height:500px;
+    top: 15%;
+    left: 5%;
+}
+
+body{
+    background-color: #F29F05;
+}
+h6{
+    font-size: 9px;
+}
+
+img#icon{
+    height: 40px;
+    width: 40px;
+}
+
+div#form_icons div#form_borda{
+    position: fixed;
+}
+
+div#form_icons label#cadastro{
+    position: absolute;
+    font-size: 15px;
+    top: 20px;
+    left: 60px;
+}
+
+div#form_borda{
+    position: absolute;
+    top: 7%;
+    margin-left: 70%;
+    background-color: white;
+    padding: 15px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+form{
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    border:solid 1px;
+    padding: 30px;
+    
+    font-size: 12px;
+}
+
+
+
+form label.l85{
+    padding-right: 70%;
+}
+
+form label.l84{
+    padding-right: 65%;
+}
+
+form label.l55{
+    padding-right: 35%;
+}
+
+.submit{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 30px;
+    padding-right: 40px;
+    color:white;
+    background-color: #F29F05;
+    border: solid 0px;
+}
 </style>
