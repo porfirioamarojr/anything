@@ -67,6 +67,12 @@ export default {
 
 <style scoped>
 
+    /*
+    @media only screen and (max-device-width: 900px) {
+        .menu { width:100%; }
+    } 
+    */
+
     h6{
         padding-top: -50px;
     }

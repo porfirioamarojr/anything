@@ -1,17 +1,23 @@
 <template id="template">
   <div id="app">
-    <Formulario/>
+    <Cadastro/>
     <br>
-    <Cliente/>
-    <Produto/>
+    <CadastroEndereco/>
+    <br>
+    <br>
+    
   </div>
 </template>
 
 <script>
 
+/*
 import Formulario from "./components/Formulario"
 import Cliente from './components/Cliente'
 import Produto from './components/Produto'
+*/
+import Cadastro from './components/Cadastro'
+import CadastroEndereco from './components/CadastroEndereco'
 
 /*export default {
   name: 'App',
@@ -34,9 +40,12 @@ export default {
     }
   },
   components:{
-    Cliente,
-    Produto,
-    Formulario
+    //Cliente,
+    //Produto,
+    //Formulario,
+    Cadastro,
+    CadastroEndereco
+
 
   }
   
@@ -44,19 +53,20 @@ export default {
 </script>
 
 <style>
- #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  background-color: #F29F05;
   
- }
-
- #template {
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+    background-color: #F29F05;
+   
+  }
  
- }
+  #template {
+  
+  }
 
 </style>
