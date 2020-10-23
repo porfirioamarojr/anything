@@ -1,20 +1,23 @@
-<template>
+<template id="template">
   <div id="app">
-
+    <Formulario/>
+    <br>
+    <Cliente/>
+    <Produto/>
   </div>
 </template>
 
 <script>
 
-import formulario from "./components/formulario.vue"
-
-export default {
-  name: 'App',
-  components: {
-    formulario
+import Formulario from "./components/Formulario"
 import Cliente from './components/Cliente'
 import Produto from './components/Produto'
 
+/*export default {
+  name: 'App',
+  components: {
+    formulario
+*/
 export default {
   name: 'App',
   data(){
@@ -32,7 +35,8 @@ export default {
   },
   components:{
     Cliente,
-    Produto
+    Produto,
+    Formulario
 
   }
   
@@ -49,8 +53,10 @@ export default {
   margin-top: 60px;
   background-color: #F29F05;
   
-}
+ }
 
-template{
-}
+ #template {
+ 
+ }
+
 </style>
