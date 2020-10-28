@@ -6,7 +6,8 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 Data | Versão | Descrição | Autor 
  -------- | ----------- | ---------- | ------------ 
- 08/10/2020      | 1 versão  | Primeiro Documento | José Erildo
+ 08/10/2020      | 1.0  | Documento inicial | José Erildo
+ 27/10/2020      | 1.1  | Descrições em andamento | Marcelo Raí
  
  
 ### Prioridade do User Story  
@@ -17,11 +18,11 @@ Data | Versão | Descrição | Autor
  
  ### Lista de User Stories
    
-### User Story US00 - Cadastro Dados Pessoais do Usuário
+### User Story US00 - Cadastro de Dados Pessoais do Usuário
 
 | **Descrição**  | O sistema deve manter um cadastro de dados pessoais do usuário e armazená-lo no banco de dados para em seguida ter acesso ao sistema via login e senha. Um usuário tem os atributos nome, endereço, email, senha, cpf, idade, Sexo, data de nascimento e telefone.
 |---|---|
-|  **Requisitos Envolvidos**  |   |
+|  **Requisitos Envolvidos**  | RF002, RF003, RF004  |
 |   **Prioridade**  |  Essencial |
 |  **Estimativa**  |  5h  |
 |  **Tempo Gasto Real:** |   | 
@@ -37,7 +38,7 @@ Data | Versão | Descrição | Autor
 
 | **Descrição**  | Após cadastrar os dados pessoais, o usuáro será redirecionado para uma nova tela na qual irá cadastrar dados de endereço: rua, cidade, cep, numero, bairro, referência.
 |---|---|
-|  **Requisitos Envolvidos**  |   |
+|  **Requisitos Envolvidos**  | RF002, RF003  |
 |   **Prioridade**  |  Essencial |
 |  **Estimativa**  |  5h  |
 |  **Tempo Gasto Real:** |   | 
@@ -53,7 +54,7 @@ Data | Versão | Descrição | Autor
 
 | **Descrição**  | Após o cadastro de dados pessoais o  usuário estará habilidade para fazer login |
 |---|---|
-|  **Requisitos Envolvidos**  |   |
+|  **Requisitos Envolvidos**  | RF002, RF005  |
 |   **Prioridade**  |  Essencial |
 |  **Estimativa**  |  5h  |
 |  **Tempo Gasto Real:** |   | 
@@ -64,6 +65,7 @@ Data | Versão | Descrição | Autor
 |---|---|
 |  **TA01.01**  | O usuário informa corretamente na tela seu email e senha e entra no sistema |
 |   **TA01.02**  | O usuário informa incorretamente na tela seu email e senha para entrar no sistema e recebe mensagem de erro|
+| **TA01.03** | Caso o usuário faça mais de uma tentativa de acesso e tenha esquecido a senha, poderá enviar solicitação para alteração via e-mail, logo em seguida poderá fazer login novamente e ter acesso ao sistema normalmente. |
 
 ### Tela 00
 ![diagrama](img/TELA1.jpeg)
