@@ -1,12 +1,12 @@
 <template>
 <div>
 <head>
-<title>Title of the document</title>
-<link href="style.css" rel="stylesheet">
+    <title>Title of the document</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <img id="logo" src="..\assets\LOGO.png"/>
+    <img id="logo" src="../assets/LOGO.png"/>
 
     <div id="form_borda">
         <div id="form_icons">
@@ -34,8 +34,32 @@
 </template>
 
 <script>
+//import Cadastro from './components/Cadastro'
+
 export default {
-    
+    components:{
+    //Cliente,
+    //CadastroCliente,
+    //Login,
+    //Produto,
+    //Formulario,
+    //Cadastro,
+    //CadastroEndereco
+
+
+  },
+  methods: {
+    cadastrarUsuario: function(){
+      if(this.nomeField == "" || this.nomeField == " " || this.nomeField.length < 3)
+        console.log("Erro na validação");
+      else{
+        this.clientes.push({nome: this.nomeField, email: this.emailField, idade:  this.idadeField, id: Date.now()})
+        this.nomeField = "";
+        this.emailField = "";
+        this.idadeField = 0;
+      }
+    } 
+  }
 }
 </script>
 
