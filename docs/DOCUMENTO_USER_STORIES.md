@@ -14,7 +14,7 @@ Data | Versão | Descrição | Autor
 | User Story US01 - Manter Usuário  |   |   |   |   |
 |---|---|---|---|---|
 | **Descrição** | O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos nome, endereço, email e senha. O email será o login e ele pode registrar-se diretamente no sistema e aguardar ativação da conta pela administrador.  |   |   |   |
-|  **Requisitos Envolvidos** | -  |   |   |   |
+|  **Requisitos Envolvidos** |  |   |   |   |
 | **Prioridade**  | Essencial  |   |   |   |
 | **Estimativa** | Essencial  |   |   |   |
 | **Estimativa**  | 5h  |  **Tempo Gasto Real:** |  - |   |
