@@ -8,6 +8,7 @@ Data | Versão | Descrição | Autor
  -------- | ----------- | ---------- | ------------ 
  08/10/2020      | 1.0  | Documento inicial | José Erildo
  27/10/2020      | 1.1  | Descrições em andamento | Marcelo Raí
+ 30/10/2020      | 1.2  | Adiçao do US003 | Jhonatas Laurentino 
  
  
 ### Prioridade do User Story  
@@ -69,3 +70,22 @@ Data | Versão | Descrição | Autor
 
 ### Tela 00
 ![diagrama](img/TELA1.jpeg)
+
+
+### User Story US03 - Cadastro de produtos
+
+| **Descrição**  | CRUD com os dados dos produtos que serão vendidos no sistema
+|---|---|
+|  **Requisitos Envolvidos**  | RF001 |
+|   **Prioridade**  |  Essencial |
+|  **Estimativa**  |  7h  |
+|  **Tempo Gasto Real:** |   | 
+|  **Tamanho Funcional**  |   |  
+
+### Testes de Aceitação (TA)
+| Código | Descrição |
+|---|---|
+|  **TA03.01**  | O vendedor irá cadastrar os dados do referente produto, não pode cadastrar mais de um produto do mesmo |
+|   **TA03.02**  |Todos produtos terão uma chave primaria unica, a qual será usada no CRUD |
+
+![Tela de vendas](img/principal.jpg)
