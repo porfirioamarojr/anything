@@ -88,4 +88,4 @@ Data | Versão | Descrição | Autor
 |  **TA03.01**  | O vendedor irá cadastrar os dados do referente produto, não pode cadastrar mais de um produto do mesmo |
 |   **TA03.02**  |Todos produtos terão uma chave primaria unica, a qual será usada no CRUD |
 
-![Tela de vendas](img/principal (1).jpg)
+![Tela de vendas](img/principal.jpg)
