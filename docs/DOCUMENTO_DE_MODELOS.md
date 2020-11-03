@@ -9,7 +9,8 @@
 * Endereço - Informações de localidade da conta dos usuários;
 * Cliente - Usuário que compra;
 * Administrador - Usuário com maiores prioridades;
-* Vendedor - Usuário que tem prioridade de cadastrar produtos.
+* Vendedor - Usuário que tem prioridade de cadastrar produtos;
+* Loja - Pertence ao usuário vendedor, que tem os produtos que foram cadastrados.
 
 ## Modelo Conceitual
 
@@ -29,7 +30,7 @@ Para mais informações sobre a utilização do yUML acesse o link:
 
 Representação de Modelo gerado pelo Draw.io:
 
-![diagrama](diagramas/MODELO_DADOS.png)  
+![diagrama](diagramas/MODELO_DADOS.jpg)  
 
 Conteúdo de Leitura
   
@@ -42,85 +43,104 @@ Um dicionário de dados é uma coleção de metadados que contêm definições e
 
 ### Entidade: Cliente
 
- Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
- -------- | ------------- | ------------ | --------- | ----------
- cpf      | primary key   | Numérico     | Não pode ser nulo. | Apenas números 
- cartao   | foreign key   | Numérico     | Não pode ser nulo. | Apenas números
+ Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição 
+ -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
+ cpf      | primary key   | Numérico     | Não pode ser nulo. | Apenas números | Conta e Cartão | Tabela para registro de clientes.
+ cartao   | foreign key   | Numérico     | Não pode ser nulo. | Apenas números |
 
 
 ### Entidade: Administrador
 
 
- Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
- -------- | ------------- | ------------ | --------- | ----------
- cpf      | primary key   | Numérico    | Não pode ser nulo. | Apenas números 
+ Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
+ -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
+ cpf      | primary key   | Numérico    | Não pode ser nulo. | Apenas números | Conta | Tabela para registro de administrador(es)
 
 
 ### Entidade: Conta
 
 
- Atributo | Tipo de chave | Tipo de dado | Restrição | Observação |
- -------- | ------------- | ------------ | --------- | ----------
- cpf      | foreign key   | Numérico     | Não pode ser nulo. | Apenas números 
- email    |      -        | Alfanumérico | Não pode ser nulo. |      -
- senha | - | Alfanumérico | Não pode ser nulo. | - 
- nome | - | Texto | Não pode ser nulo. | - 
- sexo | - | Texto | Não pode ser nulo. | - 
- data_nascimento | - | Data | Não pode ser nulo. | - 
- telefone | - | Numérico | Não pode ser nulo. | - 
- endereco | foreign key | Endereço | Não pode ser nulo. | - 
+ Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
+ -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
+ cpf      | foreign key   | Numérico     | Não pode ser nulo. | Apenas números | Administrador, Cliente, Vendedor, Carrinho e Endereço | Tabela para registro de conta
+ email    |      -        | Alfanumérico | Não pode ser nulo. | - |
+ senha | - | Alfanumérico | Não pode ser nulo. | - |
+ nome | - | Texto | Não pode ser nulo. | - |
+ sexo | - | Texto | Não pode ser nulo. | - |
+ data_nascimento | - | Data | Não pode ser nulo. | - |
+ telefone | - | Numérico | Não pode ser nulo. | - |
+ endereco | foreign key | Endereço | Não pode ser nulo. | - |
 
 
 ### Entidade: Endereço
 
 
- Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
- -------- | ------------- | ------------ | --------- | ----------
- rua | - | Alfanumérico | Não pode ser nulo. | - 
- numero | - | Numérico | Não pode ser nulo. | - 
- bairro | - | Alfanumérico | Não pode ser nulo. | - 
- nome | - | Alfanumérico | Não pode ser nulo. | - 
- cep | - | Numérico | Não pode ser nulo. | - 
- referencia | - | Alfanumérico | - | - 
+ Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
+ -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
+ rua | - | Alfanumérico | Não pode ser nulo. | - | Conta | Tabela para cadastro de endereço
+ cidade | - | Alfanumérico | Não pode ser nulo. | - |
+ numero | - | Numérico | Não pode ser nulo. | - |
+ bairro | - | Alfanumérico | Não pode ser nulo. | - |
+ cep | - | Numérico | Não pode ser nulo. | - |
+ referencia | - | Alfanumérico | - | - |
 
 
 ### Entidade: Carrinho
 
 
- Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
- -------- | ------------- | ------------ | --------- | ----------
- id_vendas | primary key | Numérico | Não pode ser nulo. | Auto-incremento
- total | - | Numérico | Não pode ser nulo. | Apenas números
- produto | foreign key | Texto | Não pode ser nulo. | - 
+ Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
+ -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
+ id_vendas | primary key | Numérico | Não pode ser nulo. | Auto-incremento | Conta, Pagamento e Produto | Tabela para adicionar itens em uma compra
+ total | - | Numérico | Não pode ser nulo. | Apenas números |
+ produto | foreign key | Texto | Não pode ser nulo. | - |
 
 
 ### Entidade: Produto
 
 
- Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
- -------- | ------------- | ------------ | --------- | ----------
- id_produtos | primary key | Numérico | Não pode ser nulo. | Auto-incremento
- nome | - | Numérico | Não pode ser nulo. | Apenas números
- valor | - | Real | Não pode ser nulo. | Apenas números
- descricao | - | Texto | - | -
+ Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
+ -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
+ id_produtos | primary key | Numérico | Não pode ser nulo. | Auto-incremento | Carrinho e Loja | Tabela para cadastro de produtos
+ nome | - | Numérico | Não pode ser nulo. | Apenas números |
+ valor | - | Real | Não pode ser nulo. | Apenas números |
+ descricao | - | Texto | - | - |
 
 
 ### Entidade: Pagamento
 
 
- Atributo | Tipo de chave | Tipo de dado | Restrição | Observação
- -------- | ------------- | ------------ | --------- | ----------
- id_pagamento | primary key | Numérico | Não pode ser nulo. |Auto-incremento
- desconto | - | Numérico | Não pode ser nulo. | Apenas números
- total | - | Real | Não pode ser nulo. | Apenas números
+ Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
+ -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
+ id_pagamento | primary key | Numérico | Não pode ser nulo. | Auto-incremento | Cartão e Carrinho | Tabela responsável pelos registros de pagamento
+ desconto | - | Numérico | Não pode ser nulo. | Apenas números |
+ total | - | Real | Não pode ser nulo. | Apenas números |
 
 
 ### Entidade: Cartão
 
  
- Atributo | Tipo de chave | Tipo de dado | Restrição |Observação
- -------- | ------------- | ------------ | --------- | ----------
- numero_cartao | primary key | Numérico | Não pode ser nulo. | Apenas números
- data | - | Data | Não pode ser nulo. | Apenas números
- nome_cartao | - | Numérico | Não pode ser nulo. | Apenas números
- cpf | - | Numérico |Não pode ser nulo. | Apenas números
+ Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
+ -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
+ numero_cartao | primary key | Numérico | Não pode ser nulo. | Apenas números | Pagamento e Cliente | Tabela para cadastro de um cartão para o cliente
+ data | - | Data | Não pode ser nulo. | Apenas números |
+ nome_cartao | - | Numérico | Não pode ser nulo. | Apenas números |
+ cpf | - | Numérico |Não pode ser nulo. | Apenas números |
+ 
+ 
+ ### Entidade: Vendedor
+
+ 
+ Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
+ -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
+ cpf | primary key | Numérico | Não pode ser nulo. | Apenas números | Conta e loja | Tabela para registro de vendedores
+ cnpj | foreign key | Numérico | Não pode ser nulo. | Apenas números |
+ 
+ 
+ ### Entidade: Loja
+
+ 
+ Atributo | Tipo de chave | Tipo de dado | Restrição | Observação | Relacionamento | Descrição
+ -------- | ------------- | ------------ | --------- | ---------- | -------------- | ---------
+ cnpj | primary key | Numérico | Não pode ser nulo. | Apenas números | Produto e Vendedor | Tabela para registro de lojas no sistema
+ nome_loja | - | Texto | Não pode ser nulo. | - |
+ descricao | - | Texto | Não pode ser nulo. | - |

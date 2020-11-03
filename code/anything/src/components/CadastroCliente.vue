@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Cadastro</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-
-<body>
-    <h1>Endereço</h1>
-    <div id="secao">
+<template>
+    <div>
+        <input type="text" v-model="CadastroCliente">
         <form action="" method="get">
             <p>Rua</p>
             <input type="text"/>
@@ -21,7 +14,6 @@
             <input type="text"/>
             <p>Referência</p>
             <input type="text"/>
-
             <p>Senha</p>
             <input type="password"/>
             <p>Confirme sua senha</p>
@@ -29,7 +21,15 @@
             <p></p>
             <input type="button" value="enviar"/>
         </form>
-    </div>
-</body>
+    </div>    
+</template>
 
-</html>
+<script>
+export default {
+    
+}
+</script>
+
+<style>
+
+</style>
