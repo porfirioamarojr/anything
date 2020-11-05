@@ -39,7 +39,7 @@ import Cadastro from './components/Cadastro'
 import CadastroEndereco from './components/CadastroEndereco'
 
 */
-import Cliente from './components/Cliente'
+import Cliente from './Cliente' //OBS: Dentro de components funciona assim
 //import Cadastro from './components/Cadastro'
 //import CadastroCliente from './components/CadastroCliente'
 //import Login from './components/Login'

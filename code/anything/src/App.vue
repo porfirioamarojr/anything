@@ -21,6 +21,7 @@ import Cadastro from './components/Cadastro'
 import CadastroEndereco from './components/CadastroEndereco'
 
 */
+import ClienteView from './components/ClienteView'
 //import Cliente from './components/Cliente'
 //import Cadastro from './components/Cadastro'
 //import CadastroCliente from './components/CadastroCliente'
@@ -62,6 +63,7 @@ export default {
     }
   },
   components:{
+    ClienteView,
     //Cliente,
     //CadastroCliente,
     //Login,
