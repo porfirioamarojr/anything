@@ -10,13 +10,6 @@ Data | Versão | Descrição | Autor
  27/10/2020      | 1.1  | Descrições em andamento | Marcelo Raí
  30/10/2020      | 1.2  | Adiçao do US003 | Jhonatas Laurentino 
  
- 
-### Prioridade do User Story  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prioridade do User Story ou dos Requisitos: A prioridade dos requisitos é utilizada no gerenciamento do escopo das etapas do projeto e na definição das prioridades durante o desenvolvimento do sistema.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Essencial:** requisito sem o qual o sistema não entra em funcionamento. Requisitos essenciais são requisitos imprescindíveis para o funcionamento do sistema.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Importante:** requisito sem o qual o sistema entra em funcionamento, mas de forma não satisfatória. Requisitos importantes devem ser implantados o mais rápido possível, mas, se não forem, parte do sistema poderá ser implantada mesmo assim.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Desejável:** requisito que não compromete as funcionalidades básicas do sistema, isto é, o sistema pode funcionar de forma satisfatória sem ele. Requisitos desejáveis são requisitos que podem ser implantados por último, sem comprometer o funcionamento do sistema.  
- 
  ### Lista de User Stories
    
 ### User Story US00 - Cadastro de Dados Pessoais do Usuário
