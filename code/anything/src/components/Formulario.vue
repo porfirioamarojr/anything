@@ -44,7 +44,6 @@
                 <br>
                 já tem um cadastro? entrar
             </h6>
-            <h1>Nome = {{nascimento}}</h1>
         </form>
         
 </template>

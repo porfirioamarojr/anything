@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../assets/style.css"/>
+        
+</head>
+<body>
+    <img id="logo" src="../assets/LOGO.png"/>
+
+    <div id="form_borda">
+        <div id="form_icons">
+            <img id="icon" src="../assets/do_utilizador.png"/>
+            <label id="cadastro">Cadastre-se</label>
+        </div>
+
+        <form action="cadastro_concluido" method="POST">
+            <label class="l85">nome</label> 
+            <br>
+            <input id="nome" type="text" name="nome" v-model="nome" required/>
+            <br>
+            <label class="l85">e-mail</label>
+            <br>
+            <input id="email" type="email" name="email" v-model="email" required/>
+            <br>
+            <label class="l85">CPF</label>
+            <br>
+            <input id="cpf" type="text" name="cpf" v-model="cpf" required/>
+            <br>
+            <label class="l85">sexo</label>
+            <br>
+            <div class="radio">
+                <input type="radio" name="sexo" value="Masculino" v-model="sexo" required/>
+                <label>Masculino</label>
+                <input type="radio" name="sexo" value="Feminino" v-model="sexo" required/>
+                <label>Feminino</label>
+            </div>
+            <br>
+            <label class="l55">data de nascimento</label>
+            <br>
+            <input id="data" name="data" type="date" v-model="nascimento" required/>
+            <br>
+            <label class="l84">telefone</label>
+            <br>
+            <input id="telefone" type="text" name="telefone" v-model="telefone" required/>
+            <br>
+            <label class="l84">senha</label>
+            <br>
+            <input type="password" required/>
+            <br>
+            <label class="l55">confirme sua senha</label>
+            <br>
+            <input id="senha" type="password" name="senha" required/>
+            <br>
+            <br>
+            <input class="submit" type="submit" value="Criar um cadastro"/>
+            <h6>fique tranquilo, nosso site é seguro
+            <br>
+            já tem um cadastro? <a href="login.html">entrar</a>
+            </h6>
+        </form>
+</body>
+</html>
