@@ -1,9 +1,27 @@
 <template id="template">
-  <div id="app">
+    <div>
     <table align="center" width="900">
       <tr>
         <td colspan="2">
-         <ClienteView/>
+          <!--<Login/>
+          <Cadastro/> 
+<CadastroCliente/>-->
+         
+          <h3>Cadastro: </h3>
+          <small id="nomeErro" v-show="deuErro">O nome inválido, tente novamente!</small><br>
+          <input type="text" placeholder="nome" v-model="nomeField"><br>
+          <input type="email" placeholder="email" v-model="emailField"><br>
+          <input type="number" placeholder="idade" v-model="idadeField"><br>
+          <button @click="cadastrarUsuario">Cadastrar</button>
+          <hr>
+          <div v-for="(cliente, index) in clientes" :key="cliente.id">
+            <h6>{{ index + 1 }}</h6>
+            <Cliente :cliente="cliente" @meDelete="deletarUsuario($event)"/>  
+            </div>
+          <br>
+          <br>
+          <br>
+          
            
           
         </td>
@@ -21,8 +39,7 @@ import Cadastro from './components/Cadastro'
 import CadastroEndereco from './components/CadastroEndereco'
 
 */
-import ClienteView from './components/ClienteView'
-//import Cliente from './components/Cliente'
+import Cliente from './Cliente' //OBS: Dentro de components funciona assim
 //import Cadastro from './components/Cadastro'
 //import CadastroCliente from './components/CadastroCliente'
 //import Login from './components/Login'
@@ -32,7 +49,6 @@ import ClienteView from './components/ClienteView'
     formulario
 */
 export default {
-  name: 'App',
   data(){
     return {
       deuErro: false,
@@ -63,8 +79,7 @@ export default {
     }
   },
   components:{
-    ClienteView,
-    //Cliente,
+    Cliente,
     //CadastroCliente,
     //Login,
     //Produto,
