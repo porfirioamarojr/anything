@@ -1,0 +1,57 @@
+body{
+    background-color: #F29F05;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.box {
+  background-color: lightblue;
+  height: 100%;
+  width: 30%;
+  margin: 8px;
+}
+
+#b1{
+    width: 100%;
+}
+
+#b2{
+    width: 30%;
+}
+
+#b3{
+    width: 67%;
+}
+
+#b3 label{
+    font-size: 20px;
+    margin: 10px;
+}
+
+div#dados, div#endereco, div#comercio{
+    border: 1px solid black;
+}
+.blank{
+    background-color: aliceblue;
+    padding: 2px 2px 2px 2px;
+    font-size: 10px;
+}
+
+.muda:hover{
+    background-color: white;
+}
+
+button{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
