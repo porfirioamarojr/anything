@@ -38,7 +38,7 @@ body{
     margin: 10px;
 }
 
-div#dados, div#endereco, div#comercio{
+div#dados, div#endereco, div#comercio, .b{
     border: 1px solid black;
 }
 .blank{
