@@ -35,25 +35,27 @@
                                     
             <form action="/comercio-p" method="POST">
                 <h2>Adicionar Produto</h2><br><br>
-                <label>nome: </label> <input required type="text" id="nome" name="nome"></br></br>
-                <label>valor: </label> <input required type="number" id="valor" name="valor"></br></br>
+                <label>nome: </label> <input required type="text" id="nome" name="nome">
+                <label>valor: </label> <input required type="number" id="valor" name="valor">
                 <label>descricao: </label> <input required type="text" id="descricaoProduto" name="descricaoProduto"></br></br>
-                </label> <input hidden type="text" id="cpfDono" name="cpfDono" value={{cpf}}></br></br>
+                </label> <input hidden type="text" id="cpfDono" name="cpfDono" value={{cpf}}></br>
 
-                <input type="submit" value="Criar"/> 
+                <input type="submit" value="Criar"/> <br><br>
             </form>
 
             <form action="del-produto" method="POST">
+                <h2>Excluir Produto</h2><br>
                 <label> Id do Produto: </label> <input type="number" id="id" name="id">
                 <br><br>
                 <input type="submit" value="excluir produto"/>
                 <br><br>
             </form>
 
-            <form action="/del-produto" method="POST">
-                <h2>Deletar Produto</h2><br><br>
-                <label>nome: </label> <input required type="text" id="nome" name="nome"></br></br>
-                <label>valor: </label> <input required type="number" id="valor" name="valor"></br></br>
+            <form action="/edit-produto" method="POST">
+                <h2>Editar Produto</h2><br><br>
+                <label> Id do Produto: </label> <input type="number" id="id" name="id">
+                <label>nome: </label> <input required type="text" id="nome" name="nomeProduto"></br></br>
+                <label>valor: </label> <input required type="number" id="valor" name="valorProduto">
                 <label>descricao: </label> <input required type="text" id="descricaoProduto" name="descricaoProduto"></br></br>
                 </label> <input hidden type="text" id="cpfDono" name="cpfDono" value={{cpf}}></br></br>
                 <input type="submit" value="Criar"/> 

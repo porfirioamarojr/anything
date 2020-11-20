@@ -232,10 +232,8 @@ app.post('/login-v', function(req,res){
                     telefone:dados.telefone,
                     data:dados.data,
                     customstyle: '<link rel="stylesheet" href="./assets/stylePerfil.css">'
-                    
-                    
                 });
-                console.log(user1)
+                
                 //res.send("<head><link rel='stylesheet' type='text/css' href='.\assets\style.css'/>'<style  rel='stylesheet' type='text/css'> body{ background-color: #F29F05;}div#borda{border: 1px solid black;margin-right: 50px;padding-right: 50px;padding-left: 50px;background-color: aliceblue;}</style></head><body><div id='borda'><h1>Bem vindo: " + dados.nome + "</h1></div></body></html>")         
             }else{
                 res.send('<script type="text/javascript"> alert("Email ou senha inválidos"); </script>');
@@ -275,7 +273,7 @@ app.post('/cadastro_concluido', function(req, res){
 });
 
 app.get('/del-usuario',function(req,res){
-
+    console.log(user1);
     cadastro.destroy({
         where: {'cpf': user1}
     })
@@ -309,6 +307,28 @@ app.post('/del-produto',function(req,res){
     console.log(user1)
     produto.destroy({
         where: {'id': req.body.id}
+    })
+
+    cadastro.findOne({ where: {cpf: user1 }}).then(function(dados){
+        res.render('meus_dados', {
+            email:dados.email,
+            nome:dados.nome,
+            sexo:dados.sexo,
+            cpf:dados.cpf,
+            telefone:dados.telefone,
+            data:dados.data,
+            customstyle: '<link rel="stylesheet" href="./assets/stylePerfil.css">'
+        });
+    });
+})
+
+app.post("/edit-produto",function(req,res){
+
+    produto.findOne({ where: {id: req.body.id }}).then(function(dados){
+        dados.nomeProduto = req.body.nomeProduto;
+        dados.valorProduto = req.body.valorProduto;
+        dados.descricaoProduto = req.body.descricaoProduto;
+        dados.save();
     })
 
     cadastro.findOne({ where: {cpf: user1 }}).then(function(dados){
