@@ -1,10 +1,10 @@
 <script>
         function deleteUser() {
             if (confirm("Tem certeza que quer deletar o usuario?") == true){
-                window.location.href = "del-usuario";
+                window.location.href = "/del-usuario";
             }
         }
-</script>
+    </script>
     
 <div class="content">
         <div id="b1" class="box">1</div>
@@ -20,19 +20,19 @@
             </div></a>
         </div>
         <div id="b3" class="box"> 
-            <form action="/meus_dados" method="POST">
+            <form action="/meu_endereco" method="POST">
             
-                <label>Nome: </label> <input type="text" id="nome" name="nome" value={{nome}}></br></br>
-                <label>Email: </label> <input type="text" id="email" name="email" value={{email}}></br></br>
-                <label>Sexo: </label> <input type="text" id="email" name="sexo" value={{sexo}}></br></br>
-                <label>CPF: </label> <input type="text" id="cpf" name="cpf" value={{cpf}}></br></br>
-                <label>Telefone: </label> <input type="number" id="telefone" name="telefone" value={{telefone}}></br></br>
-                <label>Data de Nascimento: <input type="text" id="data" name="data" value={{data}}></br></br> 
-            
+                <label>rua: </label> <input required type="text" id="rua" name="rua" value={{rua}}></br></br>
+                <label>cidade: </label> <input required type="text" id="cidade" name="cidade" value={{cidade}}></br></br>
+                <label>cep: </label> <input required type="text" id="cep" name="cep" value={{cep}}></br></br>
+                <label>numero: </label> <input required type="number" id="numero" name="numero" value={{numero}}></br></br>
+                <label>bairro: <input required type="text" id="bairro" name="nairro" value={{bairro}}></br></br> 
+                <label>referencia: <input required type="text" id="referencia" name="referencia" value={{referencia}}></br></br> 
+
                 <input type="hidden" id="cpfVerifica" value={{cpf}} name="cpfVerifica">
                 <input type="submit" value="Editar Informações"/>
                 
+                <button hidden onclick="deleteUser();">Excluir Usuario</button> 
             </form>
-            <a href="del-usuario"><button onclick="deleteUser()">Excluir Usuario</button></a>
         </div> 
       </div>
