@@ -1,0 +1,39 @@
+<script>
+        function deleteUser() {
+            if (confirm("Tem certeza que quer deletar o usuario?") == true){
+            window.location.href = "del-usuario";
+        }}
+
+        function confirma() {
+            alert("Loja Cadastrada");
+        }
+    </script>
+    
+<div class="content">
+        <div id="b1" class="box">1</div>
+        <div id="b2" class="box">
+            <a href="/meus_dados"><div class="muda" id="comercio">
+                <h1>Minha Conta</h1>
+            </div></a>
+            <a href='/meu_endereco'><div  class="muda" id="endereco">
+                <h1>Meu Endereço</h1>
+            </div></a>
+            <a href="/comercio"><div  class="muda" id="comercio">
+                <h1>Comércio</h1>
+            </div></a>
+        </div>
+        <div id="b3" class="box"> 
+            <h1>Crie sua Loja</h1><br>
+            <form action="/comercio-v" method="POST">
+            
+                <label>cnpj: </label> <input required type="text" id="cnpj" name="cnpj"></br></br>
+                <label>nomeLoja: </label> <input required type="text" id="nomeLoja" name="nomeLoja"></br></br>
+                <label>descricao: </label> <input required type="text" id="descricao" name="descricao"></br></br>
+                </label> <input hidden type="text" id="cpf" name="cpf" value={{cpf}}></br></br>
+
+                <input type="submit" value="Criar" onclick="confirma();"/>
+                
+                <button hidden onclick="deleteUser();">Excluir Usuario</button> 
+            </form>
+        </div> 
+      </div>

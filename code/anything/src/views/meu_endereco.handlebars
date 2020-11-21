@@ -1,0 +1,38 @@
+<script>
+        function deleteUser() {
+            if (confirm("Tem certeza que quer deletar o usuario?") == true){
+                window.location.href = "/del-usuario";
+            }
+        }
+    </script>
+    
+<div class="content">
+        <div id="b1" class="box">1</div>
+        <div id="b2" class="box">
+            <a href="/meus_dados"><div class="muda" id="comercio">
+                <h1>Minha Conta</h1>
+            </div></a>
+            <a href='/meu_endereco'><div  class="muda" id="endereco">
+                <h1>Meu Endereço</h1>
+            </div></a>
+            <a href="/comercio"><div  class="muda" id="comercio">
+                <h1>Criar comércio</h1>
+            </div></a>
+        </div>
+        <div id="b3" class="box"> 
+            <form action="/meu_endereco" method="POST">
+            
+                <label>rua: </label> <input required type="text" id="rua" name="rua" value={{rua}}></br></br>
+                <label>cidade: </label> <input required type="text" id="cidade" name="cidade" value={{cidade}}></br></br>
+                <label>cep: </label> <input required type="text" id="cep" name="cep" value={{cep}}></br></br>
+                <label>numero: </label> <input required type="number" id="numero" name="numero" value={{numero}}></br></br>
+                <label>bairro: <input required type="text" id="bairro" name="bairro" value={{bairro}}></br></br> 
+                <label>referencia: <input required type="text" id="referencia" name="referencia" value={{referencia}}></br></br> 
+
+                <input type="hidden" id="cpfVerifica" value={{cpf}} name="cpfVerifica">
+                <input type="submit" value="Editar Informações"/>
+                
+                <button hidden onclick="deleteUser();">Excluir Usuario</button> 
+            </form>
+        </div> 
+      </div>

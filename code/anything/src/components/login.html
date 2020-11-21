@@ -14,17 +14,17 @@
                 <label id="cadastro">Login</label>
             </div>
             
-            <form>
+            <form action="/login-v" method="POST">
                 <label class="l85">email</label> 
                 <br>
-                <input type="email" v-model="email" required/>
+                <input type="email" v-model="email" id="email" name="email" required/>
                 <br>
                 <label class="l85">senha</label>
                 <br>
-                <input type="password" v-model="cidade" required/>
+                <input type="password" v-model="cidade" id="senha" name="senha" required/>
                 <br>
                 <input class="submit" type="submit" value="Criar um cadastro"/>
-                <h6>não tem cadastro? <a href="cadastro.html">cadastre-se</a>
+                <h6>não tem cadastro? <a href="/cadastro">cadastre-se</a>
                 </h6>
             </form>
         </div>

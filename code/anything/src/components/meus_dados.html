@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/stylePerfil.css"/>
+    <title>Document</title>
+
+
+</head>
+<body>
+    <script>
+        function deleteUser() {
+            if (confirm("Tem certeza que quer deletar o usuario?") == true){
+            window.location.href = "del-usuario";
+        }}
+    </script>
+    <div class="content">
+        <div id="b1" class="box">1</div>
+        <div id="b2" class="box">
+            <div id="dados">
+                <h1>Meus Dados </h1>
+            </div>
+            <div id="endereco">
+                <h1>Meus Dados</h1>
+            </div>
+            <div id="comercio">
+                <h1>Criar comércio</h1>
+            </div>
+        </div>
+        <div id="b3" class="box">
+            <label>Nome: </label></br></br>
+            <label>Email: </label></br></br>
+            <label>Sexo: </label></br></br>
+            <label>CPF:</label></br></br>
+            <label>Telefone:</label></br></br>
+            <label>Data de Nascimento:</label></br></br>
+            <button>Editar informações </button> 
+            
+            <button onclick="deleteUser();">Excluir Usuario</button>
+        </div> 
+      </div>
+    
+</body>
+</html>
