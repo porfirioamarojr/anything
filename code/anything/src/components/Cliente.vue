@@ -14,6 +14,7 @@
         <p>Sexo: {{cliente.sexo}}</p>
         <hr>
         <p>CPF: {{cliente.cpf}}</p>
+        <h4>Id especial: {{idEspecial}}</h4>
         
     </div>
 </template>
@@ -42,11 +43,16 @@ export default {
         testar: function(){
             console.log("Testando para valer!");
             alert("Isso é um alert!");
-        },
-        filters: {
-            processarEmail: function(value){
-                return value.toUpperCase();
-            }
+        }
+    },
+    filters: {
+        processarEmail: function(value){
+            return value.toUpperCase();
+        }
+    },
+    computed: {
+        idEspecial :function(){
+            return (this.cliente.email + this.cliente.nome + this.cliente.id).toUpperCase();
         }
     }
 }

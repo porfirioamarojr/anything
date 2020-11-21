@@ -14,7 +14,7 @@
           <input type="number" placeholder="idade" v-model="idadeField"><br>
           <button @click="cadastrarUsuario">Cadastrar</button>
           <hr>
-          <div v-for="(cliente, index) in clientes" :key="cliente.id">
+          <div v-for="(cliente, index) in orderClientes" :key="cliente.id">
             <h6>{{ index + 1 }}</h6>
             <Cliente :cliente="cliente" @meDelete="deletarUsuario($event)"/>  
             </div>
@@ -39,6 +39,7 @@ import Cadastro from './components/Cadastro'
 import CadastroEndereco from './components/CadastroEndereco'
 
 */
+import _ from 'lodash'
 import Cliente from './Cliente' //OBS: Dentro de components funciona assim
 //import Cadastro from './components/Cadastro'
 //import CadastroCliente from './components/CadastroCliente'
@@ -110,8 +111,12 @@ export default {
       var novoArray = this.clientes.filter(cliente => cliente.id != id);
       this.clientes = novoArray;
     }
-  }
-  
+  },
+  computed: {
+    orderClientes: function(){
+      return _.orderBy(this.clientes,['nome'], ['asc']);
+    }
+  }   
 }
 </script>
 

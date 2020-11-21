@@ -1,36 +1,50 @@
 <template>
-<div>
-<head>
-    <title>Title of the document</title>
-    <link href="style.css" rel="stylesheet">
-</head>
+  <div id="login" class="column is-half is-offset-one-third is-one-fifth is-right">
 
-<body>
-    <img id="logo" src="../assets/LOGO.png"/>
+    <img class="is-small" id="logo" src="../assets/LOGO.png"/>
 
-    <div id="form_borda">
-        <div id="form_icons">
-            <img id="icon" src="../assets/do_utilizador.png"/>
-            <label id="cadastro">Login</label>
-        </div>
-        
-        <form>
-            <label class="l85">email</label> 
-            <br>
-            <input type="email" v-model="email" required/>
-            <br>
-            <label class="l85">senha</label>
-            <br>
-            <input type="password" v-model="cidade" required/>
-            <br>
-            <input class="submit" type="submit" value="Criar um cadastro"/>
-            <h6>não tem cadastro? <a href="cadastro.html">cadastre-se</a>
-            </h6>
-        </form>
+    <div id="form_icons">
+        <img class="is-small" id="icon" src="../assets/do_utilizador.png"/>
     </div>
     
-</body>
-</div>
+    <form>
+      <div class="field">
+        <p class="control has-icons-left has-icons-right">
+          <input class="input" type="email" placeholder="Email" v-model="email" required/>
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </p>
+      </div>
+        
+      <div class="field">
+        <p class="control has-icons-left">
+          <input class="input" type="password" placeholder="Password" v-model="cidade" required/>
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </p>
+      </div>
+      
+      <div class="field">
+        <p class="control">
+          <button class="button is-success">
+            Login
+          </button>
+        </p>
+      </div>
+
+      <div>
+        <input class="submit" type="submit" value="Criar um cadastro"/>
+        <h6>Não tem cadastro? <a href="cadastro.html">Cadastre-se</a>
+        </h6>
+      </div>
+    </form>
+      
+  </div>
 </template>
 
 <script>
@@ -64,5 +78,8 @@ export default {
 </script>
 
 <style scoped>
+#login {
+  margin-top: 12%;
+}
 
 </style>
