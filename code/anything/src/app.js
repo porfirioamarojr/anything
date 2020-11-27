@@ -344,5 +344,6 @@ app.post("/edit-produto",function(req,res){
     });
 })
 
-
-app.listen(8080);
+const server = app.listen(8080);
+//exporta o server para que seja possivel acessá-lo em outras partes do programa
+module.exports = server;
