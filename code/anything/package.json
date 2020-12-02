@@ -10,9 +10,15 @@
   "dependencies": {
     "bulma": "^0.9.1",
     "core-js": "^3.6.5",
+<<<<<<< Updated upstream
     "lodash": "^4.17.20",
     "vue": "^2.6.12",
     "vue-router": "^3.4.9"
+=======
+    "loadsh": "0.0.4",
+    "vue": "^2.6.12",
+    "yarn": "^1.22.10"
+>>>>>>> Stashed changes
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
