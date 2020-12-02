@@ -208,3 +208,5 @@ _testmain.go
 #*.png
 #*.jpeg
 *.psd
+code/anything/src/package-lock.json
+code/anything/src/package-lock.json
