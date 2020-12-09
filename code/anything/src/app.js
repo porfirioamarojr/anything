@@ -21,11 +21,29 @@ app.set('view engine', 'handlebars')
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json())
 
+app.get("/home", function(req, res){
+    app.use('/assets', express.static('assets'));
+    res.sendFile(__dirname + "/components/home.html");
+    
+});
+
 app.get("/cadastro", function(req, res){
     app.use('/assets', express.static('assets'));
     res.sendFile(__dirname + "/components/cadastro.html");
     
 });
+
+app.post("/produtos-loja",function(req,res){
+    produto.findAll({where: {cpfDono: req.body.cpfDono}}).then(function(produtos){
+            res.render("exibe_produtos",{
+                produtos:produtos,
+                nomeProduto:produtos.nome,
+                valorProduto: produtos.valor,
+                descricaoProduto: produtos.descricao,
+                customstyle: '<link rel="stylesheet" href="./assets/home.css">'
+            })
+    })
+})
 
 app.get("/login", function(req, res){
     app.use('/assets', express.static('assets'));

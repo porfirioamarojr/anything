@@ -28,28 +28,136 @@ describe('inicio dos testes', () => {
       
    });
 
-   test('acessa a rota /tdd e então será apresentada a seguinte defiição de tdd:', async () => {
-      
-      const responseL = await request(server).post('/login-v').send({
-         email:'geralcina@gmail.com',
-         senha:'123'
-      });
-
-      const response = await request(server).post('/comercio-v').send({
-         
-         cpf:'123',
-         cnpj:'321',
-         nomeLoja:'Edison',
-         descricao:'loja'});
-
+   test('acessa a rota /cadastro e cria um usuario', async () => {
+      const response = await request(server).post('/cadastro_concluido').send({
+         cpf:'55222',
+         nome:'Guilherme',
+         email:'guilherme@gmail.com',
+         sexo:'masculino',
+         senha:'guilherme123',
+         telefone:'0800'});
       expect(response.status).toEqual(200);
       expect(response.text).toContain('');
       
    });
 
-   test('irá verificar o retorno da função saytdd', () => {
-      //é esperado que o retorno da função saytdd seja:
-      expect(sayTDD()).toMatch('TDD é o Desenvolvimento Orientado por Testes');
+   test('alterar usuario cadastrado', async () => {
+ 
+      const responseL = await request(server).post('/login-v').send({
+         email:'guilherme@gmail.com',
+         senha:'guilherme123'
+      });
+      const response = await request(server).post('/meus_dados').send({
+         cpfVerifica: '55222',
+         cpf:'55222',
+         nome:'Guilherme',
+         email:'guilherme@gmail.com',
+         sexo:'masculino',
+         senha:'guilherme123',
+         telefone:'2400'});
+      expect(response.status).toEqual(200);
+      expect(response.text).toContain('');
       
    });
+
+   test('Alterar endereco', async () => {
+      const response = await request(server).post('/meu_endereco').send({
+         cpfVerifica: '55222',
+         rua: 'Parque das Acassias',
+         cidade: 'São Paulo',
+         cep: '590000',
+         numero: '55',
+         bairro: 'Centro',
+         referencia: 'Nenhuma'
+      });
+   });
+
+   test('Criando loja', async () => {
+   
+      const responseL = await request(server).post('/login-v').send({
+         email:'guilherme@gmail.com',
+         senha:'guilherme123'
+      });
+      const response = await request(server).post('/comercio-v').send({
+         
+         cpf:'55222',
+         cnpj:'777666',
+         nomeLoja:'Edison',
+         descricao:'loja'});
+      expect(response.status).toEqual(200);
+      expect(response.text).toContain('');
+      
+   });
+
+   test('Alterar Dados Loja', async () => {
+
+      const responseL = await request(server).post('/login-v').send({
+         email:'guilherme@gmail.com',
+         senha:'guilherme123'
+      });
+
+      const response = await request(server).post('/set-loja').send({
+         cnpj:'777666',
+         nomeLoja:'Edison2',
+         descricao:'Descricao teste'
+      });
+   });
+
+   test('Adicionar Produto', async () => {
+      const responseL = await request(server).post('/login-v').send({
+         email:'guilherme@gmail.com',
+         senha:'guilherme123'
+      });
+      const response = await request(server).post('/comercio-p').send({
+         cpfDono:'55222',
+         valor:'77',
+         nome:'Enxoval',
+         descricaoProduto:'Descricao Teste'
+      });
+   });
+
+   test('Editar Produto', async () => {
+
+      const responseL = await request(server).post('/login-v').send({
+         email:'guilherme@gmail.com',
+         senha:'guilherme123'
+      });
+
+      const response = await request(server).post('/edit-produto').send({
+         id:'8',
+         nomeProduto: 'Ventilador',
+         valorProduto:'55',
+         descricaoProduto:'Nenhuma'
+      });
+   });
+
+   test('Deletar Produto', async () => {
+      const responseL = await request(server).post('/login-v').send({
+         email:'guilherme@gmail.com',
+         senha:'guilherme123'
+      });
+      const response = await request(server).post('/del-produto').send({
+         id:'8',
+      });
+   });
+
+   test('Deletar Loja', async () => {
+      const responseL = await request(server).post('/login-v').send({
+         email:'guilherme@gmail.com',
+         senha:'guilherme123'
+      });
+      const response = await request(server).get('/del-loja');
+   });
+
+   test('deletar usuario cadastrado', async () => {
+
+      const responseL = await request(server).post('/login-v').send({
+         email:'guilherme@gmail.com',
+         senha:'guilherme123'
+      });
+      const response = await request(server).get('/del-usuario');
+      
+   });
+
+
 });
