@@ -75,3 +75,23 @@ form label.l55{
     background-color: #F29F05;
     border: solid 0px;
 }
+
+#logoMenu{
+    height: 80px;
+    padding-left: 40px;
+}
+
+#perfilMenu{
+    height: 60px;
+    padding-left: 800px;
+}
+
+#fLogin{
+    color: white;
+    padding-left: 10px;
+    padding-top: 80px;
+}
+
+#b1{
+    background-color: ;
+}

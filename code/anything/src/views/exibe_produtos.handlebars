@@ -1,0 +1,25 @@
+
+        <div class="content">
+            <div id="b1" class="box">
+                <a href="/home">
+                    <img id="logoMenu" src="assets/LOGO.png">
+                </a>
+                
+                <a href="/login"></a>
+                    <img id="perfilMenu" src="assets/lLogin.png"></a>
+                </a></a>
+            </div>
+        </div>
+        
+            {{#each produtos}}
+            <div >
+                <br><br>
+                <label> Id: {{id}}</label><br><br>
+                <label> Nome: {{nomeProduto}}</label><br><br>
+                <label> Valor: {{valorProduto}}</label><br><br>
+                <label> Descricao: {{descricaoProduto}}</label><br><br>
+                
+                <button>Comprar</button>
+            </div>
+            {{/each}}                      
+      </div>

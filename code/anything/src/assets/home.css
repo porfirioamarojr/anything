@@ -1,5 +1,5 @@
 body{
-    background-color: #F29F05;
+    background-color: aliceblue;
 }
 
 * {
@@ -56,6 +56,27 @@ button{
     margin-bottom: 20px;
 }
 
+.loja{
+    margin-top: 10px;
+}
+
+.borda-loja{
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    background-color: #c0c0c0;
+}
+
+.box{
+    background-color: #F29F05;
+}
+
 #logoMenu{
     height: 80px;
     padding-left: 40px;
@@ -71,4 +92,7 @@ button{
     padding-left: 10px;
     padding-top: 80px;
 }
+
+
+
 
