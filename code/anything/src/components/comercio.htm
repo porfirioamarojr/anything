@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercio</title>
+    <link rel="stylesheet" type="text/css" href="../assets/stylePerfil.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<body>    
+    <div class="content">
+        <div id="b1" class="box">1</div>
+        <div id="b2" class="box">
+            <a href="/meus_dados"><div class="muda" id="comercio">
+                <h1>Minha Conta</h1>
+            </div></a>
+            <a href='/meu_endereco'><div  class="muda" id="endereco">
+                <h1>Meu Endereço</h1>
+            </div></a>
+            <a href="/comercio"><div  class="muda" id="comercio">
+                <h1>Comércio</h1>
+            </div></a>
+        </div>
+        <div id="b3" class="box"> 
+            <form action="/set-loja" method="POST">
+                <h1>Nome da Loja: </h1><input type="text" id="nomeLoja" name="nomeLoja" value="{{nomeLoja}}"></br></br>
+                <h2>Descricao: </h2><input type="text" id="descricao" name="descricao" value="{{descricao}}"></br></br>
+                <h3>CNPJ: </h3><input type="text" id="cnpj" name="cnpj" value="{{cnpj}}"></br></br>
+            
+                <input type="submit" value="Editar Campos da Loja"><br><br>
+            </form>
+            <a href="del-loja"><button>Excluir Loja</button></a><br><br>
+
+            {{#each produtos}}
+            <div class="b">
+                <label>Id: {{id}}</label><br><br>
+                <label>Nome: {{nomeProduto}}</label><br><br>
+                <label>Valor: {{valorProduto}}</label><br><br>
+                <label>Descricao: {{descricaoProduto}}</label><br><br>
+                
+            </div>
+            {{/each}}
+                                    
+            <form action="/comercio-p" method="POST">
+                <h2>Adicionar Produto</h2><br><br>
+                <label>nome: </label> <input required type="text" id="nome" name="nome">
+                <label>valor: </label> <input required type="number" id="valor" name="valor">
+                <label>descricao: </label> <input required type="text" id="descricaoProduto" name="descricaoProduto"></br></br>
+                </label> <input hidden type="text" id="cpfDono" name="cpfDono" value={{cpf}}></br>
+
+                <input type="submit" value="Criar"/> <br><br>
+            </form>
+
+            <form action="del-produto" method="POST">
+                <h2>Excluir Produto</h2><br>
+                <label> Id do Produto: </label> <input type="number" id="id" name="id">
+                <br><br>
+                <input type="submit" value="excluir produto"/>
+                <br><br>
+            </form>
+
+            <form action="/edit-produto" method="POST">
+                <h2>Editar Produto</h2><br><br>
+                <label> Id do Produto: </label> <input type="number" id="id" name="id">
+                <label>nome: </label> <input required type="text" id="nome" name="nomeProduto"></br></br>
+                <label>valor: </label> <input required type="number" id="valor" name="valorProduto">
+                <label>descricao: </label> <input required type="text" id="descricaoProduto" name="descricaoProduto"></br></br>
+                </label> <input hidden type="text" id="cpfDono" name="cpfDono" value={{cpf}}></br></br>
+                <input type="submit" value="Criar"/> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>

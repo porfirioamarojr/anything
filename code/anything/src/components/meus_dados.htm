@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/stylePerfil.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>My Datas</title>
+</head>
+
+<body>    
+    <div class="content">
+        <div id="b1" class="box">1</div>
+            <div id="b2" class="box">
+                <a href="/meus_dados"><div class="muda" id="comercio">
+                    <h1>Minha Conta</h1>
+                </div></a>
+                <a href='/meu_endereco'><div  class="muda" id="endereco">
+                    <h1>Meu Endereço</h1>
+                </div></a>
+                <a href="/comercio"><div  class="muda" id="comercio">
+                    <h1>Criar comércio</h1>
+            </div></a>
+        </div>
+
+        <div id="b3" class="box"> 
+            <form action="/meus_dados" method="POST">
+                <div class="column is-one-quarter">
+                    <label><strong>Nome:<strong></label>
+                    <input class="input is-rounded is-one-fifths" placeholder="Nome completo" type="text" id="nome" name="nome" value={{nome}}></br></br>
+                </div>
+                <div class="column is-one-quarter">
+                    <label>Email: </label> 
+                    <input class="input is-rounded" placeholder="exemplo@email.com" type="text" id="email" name="email" value={{email}}></br></br>
+                </div>
+                <div class="column is-one-quarter">
+                    <label>Sexo: </label>
+                    <input class="input is-rounded" placeholder="Masculino ou Feminino" type="text" id="email" name="sexo" value={{sexo}}></br></br>
+                </div>
+                <div class="column is-one-quarter">
+                    <label>CPF: </label>
+                    <input class="input is-rounded" placeholder="12345678901" readonly="true" type="text" id="cpf" name="cpf" value={{cpf}}></br></br>
+                </div>
+                <div class="column is-one-quarter">
+                    <label>Telefone: </label>
+                    <input class="input is-rounded" placeholder="84988880000" type="number" id="telefone" name="telefone" value={{telefone}}></br></br>
+                </div>
+                <div class="column is-one-quarter">
+                    <label>Data de Nascimento:</label>
+                    <input class="input is-rounded" placeholder="Data de Nascimento" type="text" id="data" name="data" value={{data}}></br></br> 
+                </div>
+                <div class="column is-one-quarter">
+                    <input type="hidden" id="cpfVerifica" value={{cpf}} name="cpfVerifica">
+                    <input class="input is-rounded" type="submit" value="Editar Informações"/><br><br>
+                </div>
+                <div class="column is-one-quarter"> 
+                    <button class="button is-danger is-rounded">
+                        <a href="/del-usuario"></a>
+                        <div align="center">Excluir Usuário</div>
+                    </button>
+                </div>    
+                
+            </form>
+            
+        </div> 
+    </div>
+</body>
+</html>
