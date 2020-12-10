@@ -1,5 +1,5 @@
 body{
-    background-color: #F29F05;
+    background-color: aliceblue;
 }
 
 * {
@@ -38,9 +38,9 @@ body{
     margin: 10px;
 }
 
-/*div#dados, div#endereco, div#comercio, .b{
+div#dados, div#endereco, div#comercio, .b{
     border: 1px solid black;
-}*/
+}
 .blank{
     background-color: aliceblue;
     padding: 2px 2px 2px 2px;
@@ -54,6 +54,27 @@ body{
 button{
     margin-left: 30px;
     margin-bottom: 20px;
+}
+
+.loja{
+    margin-top: 10px;
+}
+
+.borda-loja{
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    background-color: #c0c0c0;
+}
+
+.box{
+    background-color: #F29F05;
 }
 
 #logoMenu{
@@ -73,10 +94,5 @@ button{
 }
 
 
-#idLaranja{
-    background-color: #F29F05;
-}
 
-#idVerde{
-    background-color: #39AD41;
-}
+

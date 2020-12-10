@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="../assets/style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    </head>
+    
+    <body>
+        <div>
+            <img id="logo" src="../assets/LOGO.png"/>
+            <h1>Sistema de Marketplace Anything</h1>
+        </div>
+
+        <div id="form_borda">
+            <div id="form_icons">
+                <img id="icon" src="../assets/do_utilizador.png"/>
+                <label id="cadastro"><strong>Login</strong></label>
+            </div>
+            
+            <form action="/login-v" method="POST">
+                <label class="l85"><strong>E-mail</strong></label> 
+                <br>
+                <input type="email" v-model="email" id="email" name="email" required/>
+                <br>
+                <label class="l85"><strong>Senha</strong></label>
+                <br>
+                <input type="password" v-model="cidade" id="senha" name="senha" required/>
+                <br>
+                <br>
+                <div align="center">
+                    <input class="submit button is-rounded idLaranja" type="submit" value="Criar um cadastro"/>
+                    <h6>Não tem cadastro? <a href="/cadastro">Cadastre-se</a>
+                    </h6>
+                </div>
+                
+            </form>
+        </div>
+    </body>
+</html>
+
+<style>
+    .idLaranja{
+        background-color: #F29F05;
+    }
+</style>
