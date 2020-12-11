@@ -66,18 +66,15 @@
                     <label>Data de Nascimento: </label>
                     <input class="input is-rounded" placeholder="Data de Nascimento" type="text" id="data" name="data" value={{data}}></br></br> 
                 </div>
-                <div class="column is-one-quarter">
+                <div>
                     <input type="hidden" id="cpfVerifica" value={{cpf}} name="cpfVerifica">
-                    <div>
-                        <input class="button input is-rounded is-info" type="submit" value="Editar Informações"/><br><br>
-                    </div>
-                </div>
-                <div class="column is-one-quarter"> 
+                    <input class="button is-info is-rounded" type="submit" value="Editar Informações"/></button>
+
                     <button class="button is-danger is-rounded">
                         <a href="/del-usuario"></a>
-                        <div align="center">Excluir Usuário</div>
-                    </button>
-                </div>    
+                        Excluir Usuário
+                    </button>     
+                </div>
                 
             </form>  
         </div>

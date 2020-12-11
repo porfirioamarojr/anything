@@ -24,5 +24,5 @@ const Cadastro = db.sequelize.define('conta',{
     }
 })
 
-//Cadastro.sync({force: true})
-module.exports = Cadastro
+Cadastro.sync({force: true})
+//module.exports = Cadastro
