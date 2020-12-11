@@ -39,7 +39,7 @@
                 </a>
             </div>
         </div>
-
+        
         <div id="b3" class="box is-right" align="Right"> 
             <form action="/set-loja" method="POST">
                 <div class="column is-half">
@@ -54,13 +54,16 @@
                     <label><strong>CNPJ:</strong></label>
                     <input class="input is-rounded" placeholder="ex: 33.014.556/0001-96." type="text" id="cnpj" name="cnpj" value="{{cnpj}}"></br></br>
                 </div>
-                <input class="button is-rounded is-info" type="submit" value="Editar Campos da Loja"><br><br>
+                <div class="buttons column is-one-fifths">
+                    <input class="button is-rounded is-info" type="submit" value="Editar Campos da Loja">
+                    <button class="button is-danger is-rounded">
+                        <a href="del-loja"></a>
+                        Excluir Loja
+                    </button>
+                </div>
             </form>
-            <button class="button is-danger is-rounded">
-                <a href="del-loja"></a>
-                Excluir Loja
-            </button>
-            <br><br><br><br>
+            
+            <br><div class="tabs is-centered"><ul></ul></div><br>
             {{#each produtos}}
             <div class="b">
                 <label>Id: {{id}}</label><br><br>
@@ -69,8 +72,8 @@
                 <label>Descricao: {{descricaoProduto}}</label><br><br>    
             </div>
             {{/each}}
-            <br><br><br>      
-            
+
+            <br><div class="tabs is-centered"><ul></ul></div><br>
             <form action="/comercio-p" method="POST" class="column">
                 <h2>Adicionar Produto</h2>
                 <div class="column is-half">
@@ -84,13 +87,13 @@
                 <div class="column is-half">
                     <label><strong>Descrição:</strong></label>
                     <input class="input is-rounded" placeholder="ex: Camiseta regata" required type="text" id="descricaoProduto" name="descricaoProduto">
-                </div>
-                </br></br>
+                </div><br>
+                
                 <input hidden type="text" id="cpfDono" name="cpfDono" value={{cpf}}>
-
-                <input class="button is-rounded is-success" type="submit" value="Adicionar"/> <br><br>
+                <input class="button is-rounded is-success" type="submit" value="Adicionar"/>
             </form>
 
+            <div class="tabs is-centered"><ul></ul></div><br>
             <form action="del-produto" method="POST">
                 <h2>Excluir Produto</h2>
                 <div class="column is-half">
@@ -98,11 +101,10 @@
                     <input class="input is-rounded" placeholder="ex: 1" type="number" id="id" name="id"><br><br>
                 </div>
                 <input class="button is-rounded is-danger" type="submit" value="Excluir Produto"/>
-                <br><br>
             </form>
 
+            <div class="tabs is-centered"><ul></ul></div><br>
             <form action="/edit-produto" method="POST">
-
                 <h2>Editar Produto</h2><br><br>
                 <div class="column is-half">
                     <label><strong>ID do Produto:</strong></label>
@@ -110,20 +112,20 @@
                 </div>
                 <br><br>
                 <div class="column is-half">
-                    <label>Nome:</label>
+                    <label><strong>Nome:</strong></label>
                     <input class="input is-rounded" placeholder="ex: Camiseta preta" required type="text" id="nome" name="nomeProduto">
                 </div>
                 </br></br>
                 <div class="column is-half">
-                    <label>Valor:</label>
+                    <label><strong>Valor:</strong></label>
                     <input class="input is-rounded" placeholder="ex: 35,00" required type="number" id="valor" name="valorProduto">
                 </div>
                 <br><br>
                 <div class="column is-half">
-                    <label>Descricao: </label>
+                    <label><strong>Descricao:</strong></label>
                     <input class="input is-rounded" placeholder="ex: Camiseta 100% algodão" required type="text" id="descricaoProduto" name="descricaoProduto"></br></br>
                 </div>
-                <input hidden type="text" id="cpfDono" name="cpfDono" value={{cpf}}></br></br>
+                <input hidden type="text" id="cpfDono" name="cpfDono" value={{cpf}}>
                 <input class="button is-rounded is-info"type="submit" value="Editar"/>
                 </div>
             </form>
