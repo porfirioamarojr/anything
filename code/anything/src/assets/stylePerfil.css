@@ -38,18 +38,15 @@ body{
     margin: 10px;
 }
 
-div#dados, div#endereco, div#comercio, .b{
+/*div#dados, div#endereco, div#comercio, .b{
     border: 1px solid black;
-}
+}*/
 .blank{
     background-color: aliceblue;
     padding: 2px 2px 2px 2px;
     font-size: 10px;
 }
 
-.muda:hover{
-    background-color: white;
-}
 
 button{
     margin-left: 30px;
@@ -72,3 +69,11 @@ button{
     padding-top: 80px;
 }
 
+
+#idLaranja{
+    background-color: #F29F05;
+}
+
+#idVerde{
+    background-color: #39AD41;
+}

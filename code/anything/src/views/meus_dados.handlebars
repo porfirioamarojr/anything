@@ -1,70 +1,70 @@
 <div class="content">
-    <div id="b1" class="box">
-        <h1>Sistema de Marketplace Anything</h1>
-    </div>
-        
-    <div id="b2" class="box">
-        <div class="muda" id="comercio">
-            <a href="/meus_dados">
-            <div id="idLaranja" class="button is-rounded">                    
-                <strong>Minha Conta</strong>
-            </div>
-            </a>
+        <div id="b1" class="box">
+            <h1>Sistema de Marketplace Anything</h1>
         </div>
-        <br>
-        <div class="muda" id="endereco">
-            <a href='/meu_endereco'>
-                <div id="idLaranja" class="button is-rounded">
-                    <strong>Meu Endereço</strong>
-                </div>
-            </a>
-        </div>
-        <br>
-        <div class="muda" id="comercio">
-            <a href="/comercio">
-                <div id="idLaranja" class="button is-rounded">
-                    <strong>Criar comércio</strong>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div id="b3" class="box is-right" align="Right"> 
-        <form action="/meus_dados" method="POST">
-            <div class="column is-half">
-                <label><strong>Nome:<strong></label>
-                <input class="input is-rounded" placeholder="Nome completo" type="text" id="nome" name="nome" value={{nome}}></br></br>
-            </div>
-            <div class="column is-half">
-                <label>Email: </label> 
-                <input class="input is-rounded" placeholder="exemplo@email.com" type="text" id="email" name="email" value={{email}}></br></br>
-            </div>
-            <div class="column is-half">
-                <label>Sexo: </label>
-                <input class="input is-rounded" placeholder="Masculino ou Feminino" type="text" id="email" name="sexo" value={{sexo}}></br></br>
-            </div>
-            <div class="column is-half">
-                <label>CPF: </label>
-                <input class="input is-rounded" placeholder="12345678901" readonly="true" type="text" id="cpf" name="cpf" value={{cpf}}></br></br>
-            </div>
-            <div class="column is-half">
-                <label>Telefone: </label>
-                <input class="input is-rounded" placeholder="84988880000" type="number" id="telefone" name="telefone" value={{telefone}}></br></br>
-            </div>
-            <div class="column is-half">
-                <label>Data de Nascimento: </label>
-                <input class="input is-rounded" placeholder="Data de Nascimento" type="text" id="data" name="data" value={{data}}></br></br> 
-            </div>
-            <div class="column is-one-quarter">
-                <input type="hidden" id="cpfVerifica" value={{cpf}} name="cpfVerifica">
-                <div>
-                    <input class="button input is-rounded is-info" type="submit" value="Editar Informações"/><br><br>
-                </div>
-            </div>
             
-        </form>  
-        <div class="column is-one-quarter"> 
-            <a href="/del-usuario"><div align="center">Excluir Usuário</div></a>
-        
-            </div>    
+        <div id="b2" class="box">
+            <div class="muda" id="comercio">
+                <a href="/meus_dados">
+                <div id="idLaranja" class="button is-rounded">                    
+                    <strong>Minha Conta</strong>
+                </div>
+                </a>
+            </div>
+            <br>
+            <div class="muda" id="endereco">
+                <a href='/meu_endereco'>
+                    <div id="idLaranja" class="button is-rounded">
+                        <strong>Meu Endereço</strong>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <div class="muda" id="comercio">
+                <a href="/comercio">
+                    <div id="idLaranja" class="button is-rounded">
+                        <strong>Criar comércio</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="b3" class="box is-right" align="Right"> 
+            <form action="/meus_dados" method="POST">
+                <div class="column is-half">
+                    <label><strong>Nome:<strong></label>
+                    <input class="input is-rounded" placeholder="Nome completo" type="text" id="nome" name="nome" value={{nome}}></br></br>
+                </div>
+                <div class="column is-half">
+                    <label>Email: </label> 
+                    <input class="input is-rounded" placeholder="exemplo@email.com" type="text" id="email" name="email" value={{email}}></br></br>
+                </div>
+                <div class="column is-half">
+                    <label>Sexo: </label>
+                    <input class="input is-rounded" placeholder="Masculino ou Feminino" type="text" id="email" name="sexo" value={{sexo}}></br></br>
+                </div>
+                <div class="column is-half">
+                    <label>CPF: </label>
+                    <input class="input is-rounded" placeholder="12345678901" readonly="true" type="text" id="cpf" name="cpf" value={{cpf}}></br></br>
+                </div>
+                <div class="column is-half">
+                    <label>Telefone: </label>
+                    <input class="input is-rounded" placeholder="84988880000" type="number" id="telefone" name="telefone" value={{telefone}}></br></br>
+                </div>
+                <div class="column is-half">
+                    <label>Data de Nascimento: </label>
+                    <input class="input is-rounded" placeholder="Data de Nascimento" type="text" id="data" name="data" value={{data}}></br></br> 
+                </div>
+                <div>
+                    <input type="hidden" id="cpfVerifica" value={{cpf}} name="cpfVerifica">
+                    <input class="button is-info is-rounded" type="submit" value="Editar Informações"/></button>
+
+                    <button class="button is-danger is-rounded">
+                        <a href="/del-usuario">Excluir Usuário</a>
+                        
+                    </button>     
+                </div>
+                
+            </form>  
+        </div>
     </div>
-</div>

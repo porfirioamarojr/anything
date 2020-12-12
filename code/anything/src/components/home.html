@@ -3,49 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../assets/home.css" rel="stylesheet">
-
-    <title>Document</title>
+    <link href="../assets/home.css" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="../assets/stylePerfil.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>Home</title>
 </head>
+
 <body>
     <div class="content">
         <div id="b1" class="box">
-                <img id="logoMenu" src="../assets/LOGO.png">
-                <a href="/login">
-                    <img id="perfilMenu" src="../assets/lLogin.png">
+            <div class="columns">
+                <div>
+                    <figure class="image is-128x128">
+                        <img id="logoMenu" src="../assets/LOGO.png">
+                    </figure>
+                </div>
+                <div>
+                    <img id="perfilMenu" src="../assets/do_utilizador.png">
+                </div>
+                <a class="column" href="/login">
+                    <h1>Login</h1>
                 </a>
+            </div>        
         </div>
     </div>
 
     <div id="lojas">
-            <div class="borda-loja">
-                <form action="/produtos-loja" method="POST">
-                    <img class="loja" src="../assets/loja1.jpg"><br><br>
+        <div class="borda-loja" align="center">
+            <form action="/produtos-loja" method="POST">
+                <figure class="image is-128x128">
+                    <img class="loja is-rounded" src="../assets/loja1.jpg"><br><br>
                     <input type="hidden" value="1111111" name="cpfDono">
-                    <button type="submit">Entrar na loja 1</button>
-                </form>
-
-            </div>
-                
-            <div class="borda-loja">
-                <form action="/produtos-loja" method="POST">
-                    <img class="loja" src="../assets/loja2.jpg"><br><br>
+                </figure><br>
+                <button class="button is-rounded is-success is-inverted"" type="submit"><strong>Entrar na loja 1</strong></button>
+            </form>
+        </div>
+            
+        <div class="borda-loja" align="center">
+            <form action="/produtos-loja" method="POST">
+                <figure class="image is-128x128">
+                    <img class="loja is-rounded" src="../assets/loja2.jpg"><br><br>
                     <input type="hidden" value="2222222" name="cpfDono">
-                    <button type="submit">Entrar na loja 1</button>
-                </form>
-                
-            </div>
-                
-            <div class="borda-loja">
-                <form action="/produtos-loja" method="POST">
-                    <img class="loja" src="../assets/loja3.jpg"><br><br>
+                </figure><br>
+                <button class="button is-rounded is-success is-inverted"" type="submit"><strong>Entrar na loja 2</strong></button>
+            </form>
+        </div>
+       
+        <div class="borda-loja" align="center">     
+            <form action="/produtos-loja" method="POST">
+                <figure class="image is-128x128">
+                    <img class="loja is-rounded" src="../assets/loja3.jpg"><br><br>
                     <input type="hidden" value="3333333" name="cpfDono">
-                    <button type="submit">Entrar na loja 1</button>
-                </form>
-                
-            </div>
-                
-        
+                </figure><br>
+                <button class="button is-rounded is-success is-inverted"" type="submit"><strong>Entrar na loja 3</strong></button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
