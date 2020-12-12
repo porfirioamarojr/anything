@@ -11,32 +11,54 @@
     
 <div class="content">
         <div id="b1" class="box">
-            <a href="/home">
-            <img id="logoMenu" src="assets/LOGO.png">
-            </a>        
+            <h1>Sistema de Marketplace Anything</h1>
         </div>
-        
+    
         <div id="b2" class="box">
-            <a href="/meus_dados"><div class="muda" id="comercio">
-                <h1>Minha Conta</h1>
-            </div></a>
-            <a href='/meu_endereco'><div  class="muda" id="endereco">
-                <h1>Meu Endereço</h1>
-            </div></a>
-            <a href="/comercio"><div  class="muda" id="comercio">
-                <h1>Comércio</h1>
-            </div></a>
+            <div class="muda" id="comercio">
+                <a href="/meus_dados">
+            <div id="idLaranja" class="button is-rounded">                
+                <strong>Minha Conta</strong>
+            </div>
+            </a>
+            </div>
+            <br>
+            <div class="muda" id="endereco">
+                <a href='/meu_endereco'>
+                <div id="idLaranja" class="button is-rounded">
+                    <strong>Meu Endereço</strong>
+                </div>
+                </a>
+             </div>
+        <br>
+        <div class="muda" id="comercio">
+            <a href="/comercio">
+                <div id="idLaranja" class="button is-rounded">
+                    <strong>Criar comércio</strong>
+                </div>
+            </a>
+        </div>
         </div>
         <div id="b3" class="box"> 
             <h1>Crie sua Loja</h1><br>
             <form action="/comercio-v" method="POST">
             
-                <label>cnpj: </label> <input required type="text" id="cnpj" name="cnpj"></br></br>
-                <label>nomeLoja: </label> <input required type="text" id="nomeLoja" name="nomeLoja"></br></br>
-                <label>descricao: </label> <input required type="text" id="descricao" name="descricao"></br></br>
+                <div class="column is-half">
+                    <label><strong>Cnpj:<strong></label>
+                    <input class="input is-rounded" placeholder="cnpj" type="text" id="cnpj" name="cnpj" value={{cnpj}}></br></br>
+                </div>
+                <div class="column is-half">
+                    <label><strong>Nome da Loja:<strong></label>
+                    <input class="input is-rounded" placeholder="nome loja" type="text" id="nomeLoja" name="nomeLoja" value={{nomeLoja}}></br></br>
+                </div>
+                <div class="column is-half">
+                    <label><strong>Descricao:<strong></label>
+                    <input class="input is-rounded" placeholder="descricao" type="text" id="descricao" name="descricao" value={{descricao}}></br></br>
+                </div>
+                
                 </label> <input hidden type="text" id="cpf" name="cpf" value={{cpf}}></br></br>
 
-                <input type="submit" value="Criar" onclick="confirma();"/>
+                <input class="button input is-rounded is-info" type="submit" value="Criar Comércio"/><br><br>
                 
                 <button hidden onclick="deleteUser();">Excluir Usuario</button> 
             </form>

@@ -2,35 +2,60 @@
     
 <div class="content">
         <div id="b1" class="box">
-            <a href="/home">
-            <img id="logoMenu" src="assets/LOGO.png">
-            </a>        
+            <h1>Sistema de Marketplace Anything</h1>
+        </div>
+    
+        <div id="b2" class="box">
+            <div class="muda" id="comercio">
+                <a href="/meus_dados">
+                <div id="idLaranja" class="button is-rounded">             
+                    <strong>Minha Conta</strong>
+                </div>
+                </a>
+            </div>
+            <br>
+        <div class="muda" id="endereco">
+            <a href='/meu_endereco'>
+                <div id="idLaranja" class="button is-rounded">
+                    <strong>Meu Endereço</strong>
+                </div>
+            </a>
+        </div>
+            <br>
+        <div class="muda" id="comercio">
+            <a href="/comercio">
+            <div id="idLaranja" class="button is-rounded">
+                <strong>Criar comércio</strong>
+            </div>
+        </a>
+        </div>
         </div>
 
-        <div id="b2" class="box">
-            <a href="/meus_dados"><div class="muda" id="comercio">
-                <h1>Minha Conta</h1>
-            </div></a>
-            <a href='/meu_endereco'><div  class="muda" id="endereco">
-                <h1>Meu Endereço</h1>
-            </div></a>
-            <a href="/comercio"><div  class="muda" id="comercio">
-                <h1>Comércio</h1>
-            </div></a>
-        </div>
+
         <div id="b3" class="box"> 
             <form action="/set-loja" method="POST">
-                <h1>Nome da Loja: </h1><input type="text" id="nomeLoja" name="nomeLoja" value="{{nomeLoja}}"></br></br>
-                <h2>Descricao: </h2><input type="text" id="descricao" name="descricao" value="{{descricao}}"></br></br>
-                <h3>CNPJ: </h3><input type="text" id="cnpj" name="cnpj" value="{{cnpj}}"></br></br>
+                <div class="column is-half">
+                    <label><strong>Cnpj:<strong></label>
+                    <input class="input is-rounded" placeholder="cnpj" type="text" id="cnpj" name="cnpj" value={{cnpj}}></br></br>
+                </div>
+                <div class="column is-half">
+                    <label><strong>Nome da Loja:<strong></label>
+                    <input class="input is-rounded" placeholder="nome loja" type="text" id="nomeLoja" name="nomeLoja" value={{nomeLoja}}></br></br>
+                </div>
+                <div class="column is-half">
+                    <label><strong>Descricao:<strong></label>
+                    <input class="input is-rounded" placeholder="descricao" type="text" id="descricao" name="descricao" value={{descricao}}></br></br>
+                </div>
             
-                <input type="submit" value="Editar Campos da Loja"><br><br>
+                <input class="button input is-rounded is-info" type="submit" value="Editar Campos da Loja"/><br><br>
+
             </form>
-            <a href="del-loja"><button>Excluir Loja</button></a><br><br>
+            <a class="button input is-rounded is-info"  href="del-loja" type="submit" value="Excluir Loja">Excluir Loja</a>
+            <br><br>
 
             {{#each produtos}}
             <div class="b">
-                <label>Id: {{id}}</label><br><br>
+                <label></label>Id: {{id}}</label><br><br>
                 <label>Nome: {{nomeProduto}}</label><br><br>
                 <label>Valor: {{valorProduto}}</label><br><br>
                 <label>Descricao: {{descricaoProduto}}</label><br><br>
@@ -39,31 +64,63 @@
             {{/each}}
                                     
             <form action="/comercio-p" method="POST">
+            <br><br>
                 <h2>Adicionar Produto</h2><br><br>
-                <label>nome: </label> <input required type="text" id="nome" name="nome">
-                <label>valor: </label> <input required type="number" id="valor" name="valor">
-                <label>descricao: </label> <input required type="text" id="descricaoProduto" name="descricaoProduto"></br></br>
+                <div class="column is-half">
+                    <label><strong>Nome:<strong></label>
+                    <input class="input is-rounded" placeholder="nome" type="text" id="nome" name="nome">
+                </div>
+                <div class="column is-half">
+                    <label><strong>Valor:<strong></label>
+                    <input class="input is-rounded" placeholder="" type="number" id="valor" name="valor">
+                </div>
+                <div class="column is-half">
+                    <label><strong>Descricao:<strong></label>
+                    <input class="input is-rounded" placeholder="descricaoProduto" type="text" id="descricaoProduto" name="descricaoProduto"></br></br>
+                </div>
                 </label> <input hidden type="text" id="cpfDono" name="cpfDono" value={{cpf}}></br>
 
-                <input type="submit" value="Criar"/> <br><br>
+                <input class="button input is-rounded is-info" type="submit" value="Criar Produto"/><br><br>
             </form>
 
             <form action="del-produto" method="POST">
-                <h2>Excluir Produto</h2><br>
-                <label> Id do Produto: </label> <input type="number" id="id" name="id">
                 <br><br>
-                <input type="submit" value="excluir produto"/>
+                                
+                <h2>Excluir Produto</h2><br>
+
+                <div class="column is-half">
+                    <label><strong>Id do Produto:<strong></label>
+                    <input class="input is-rounded" placeholder="nomeProduto" type="text" id="id" name="id">
+                </div>
+                <input class="button input is-rounded is-info" type="submit" value="Excluir Produto"/><br><br>
+
                 <br><br>
             </form>
 
             <form action="/edit-produto" method="POST">
-                <h2>Editar Produto</h2><br><br>
-                <label> Id do Produto: </label> <input type="number" id="id" name="id">
-                <label>nome: </label> <input required type="text" id="nome" name="nomeProduto"></br></br>
-                <label>valor: </label> <input required type="number" id="valor" name="valorProduto">
-                <label>descricao: </label> <input required type="text" id="descricaoProduto" name="descricaoProduto"></br></br>
+                <h2>Editar Produto</h2>
+                
+                <div class="column is-half">
+                    <label><strong>Id do Produto:<strong></label>
+                    <input class="input is-rounded" placeholder="nome" type="text" id="id" name="id"><br><br>
+                </div>    
+
+                <div class="column is-half">
+                    <label><strong>Nome:<strong></label>
+                    <input class="input is-rounded" placeholder="nome" type="text" id="nome" name="nomeProduto"><br><br>
+                </div>
+                <div class="column is-half">
+                    <label><strong>Valor:<strong></label>
+                    <input class="input is-rounded" placeholder="ValorProduto" type="number" id="valor" name="valorProduto">
+                </div>
+                <div class="column is-half">
+                    <label><strong>Descricao:<strong></label>
+                    <input class="input is-rounded" placeholder="descricaoProduto" type="text" id="descricaoProduto" name="descricaoProduto"></br></br>
+                </div>
                 </label> <input hidden type="text" id="cpfDono" name="cpfDono" value={{cpf}}></br></br>
-                <input type="submit" value="Criar"/> 
+
+                <input class="button input is-rounded is-info" type="submit" value="Editar Produto"/><br><br>
+
             </form>
         </div> 
       </div>
